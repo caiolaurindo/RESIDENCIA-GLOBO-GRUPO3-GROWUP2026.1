@@ -1,0 +1,4202 @@
+[
+  {
+    "name": "2_TURNO",
+    "patch": "201830"
+  },
+  {
+    "name": "5_HORA",
+    "patch": "201830"
+  },
+  {
+    "name": "ABAIXAR_ORELHA",
+    "patch": "201830"
+  },
+  {
+    "name": "ABAIXAR_RABO",
+    "patch": "201830"
+  },
+  {
+    "name": "ABAIXAR_VOZ",
+    "patch": "201830"
+  },
+  {
+    "name": "ABANDONAR_ME",
+    "patch": "201830"
+  },
+  {
+    "name": "ABANDONO_INCAPAZ",
+    "patch": "201830"
+  },
+  {
+    "name": "ABANDONO_PESSOA_INCAPAZ",
+    "patch": "201830"
+  },
+  {
+    "name": "ABÓRBORA",
+    "patch": "201830"
+  },
+  {
+    "name": "ABRIDOR_DE_LATA",
+    "patch": "201830"
+  },
+  {
+    "name": "ABRIR_ARQUIVO",
+    "patch": "201830"
+  },
+  {
+    "name": "ABRIR_CONTA_EM_BANCO",
+    "patch": "201830"
+  },
+  {
+    "name": "ABRIR_GARRAFA",
+    "patch": "201830"
+  },
+  {
+    "name": "ABRIR_JANELA",
+    "patch": "201830"
+  },
+  {
+    "name": "ABRIR_OLHOS",
+    "patch": "201830"
+  },
+  {
+    "name": "ABRIR_PORTA",
+    "patch": "201830"
+  },
+  {
+    "name": "ABRIR_TAMPA",
+    "patch": "201830"
+  },
+  {
+    "name": "ABSORVER_ÁGUA",
+    "patch": "201830"
+  },
+  {
+    "name": "ABSORVER_CONHECIMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "ACABAR!",
+    "patch": "201830"
+  },
+  {
+    "name": "ACABOU!",
+    "patch": "201830"
+  },
+  {
+    "name": "AÇAÍ",
+    "patch": "201830"
+  },
+  {
+    "name": "ACALENTAR_BEBÊ",
+    "patch": "201830"
+  },
+  {
+    "name": "ACANHADO",
+    "patch": "201830"
+  },
+  {
+    "name": "AÇÃO_ALIMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "AÇÃO_DECLARATÓRIA_CONSTITUCIONALIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "AÇÃO_DESPEJO",
+    "patch": "201830"
+  },
+  {
+    "name": "AÇÃO_DIRETA_INCONSTITUCIONALIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "AÇÃO_DIRETA_INCONSTITUCIONALIDADE_OMISSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "AÇÃO_EXONERAÇÃO_ALIMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "ACAUTELAR_SE",
+    "patch": "201830"
+  },
+  {
+    "name": "ACENDER_VELA",
+    "patch": "201830"
+  },
+  {
+    "name": "ACENTO_CIRCUNFLEXO",
+    "patch": "201830"
+  },
+  {
+    "name": "ACENTO_GRAVE",
+    "patch": "201830"
+  },
+  {
+    "name": "ACETILSALICÍLICO",
+    "patch": "201830"
+  },
+  {
+    "name": "ACIDENTE_CARRO",
+    "patch": "201830"
+  },
+  {
+    "name": "ACIDENTE_VASCULAR_CEREBRAL",
+    "patch": "201830"
+  },
+  {
+    "name": "ACOMODAMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "ACORDO_LIDERANÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "ACUSAR_ME",
+    "patch": "201830"
+  },
+  {
+    "name": "À_DERIVAR",
+    "patch": "201830"
+  },
+  {
+    "name": "ADMINISTRAÇÃO_DIRETA",
+    "patch": "201830"
+  },
+  {
+    "name": "ADVOCACIA-GERAL_UNIÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "AERODROMO",
+    "patch": "201830"
+  },
+  {
+    "name": "AERONAVE_CAÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "AÉROSTATO",
+    "patch": "201830"
+  },
+  {
+    "name": "À_ESQUERDA",
+    "patch": "201830"
+  },
+  {
+    "name": "À_EXCEÇÃO_DE",
+    "patch": "201830"
+  },
+  {
+    "name": "AFAVEL",
+    "patch": "201830"
+  },
+  {
+    "name": "AFERIR_PRESSÃO_ARTERIAL",
+    "patch": "201830"
+  },
+  {
+    "name": "AFERIR_TEMPERATURA",
+    "patch": "201830"
+  },
+  {
+    "name": "AFILIAR_SE",
+    "patch": "201830"
+  },
+  {
+    "name": "À_FRENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "AFRICA",
+    "patch": "201830"
+  },
+  {
+    "name": "AFRICA_SUL",
+    "patch": "201830"
+  },
+  {
+    "name": "AGÊNCIA_CÂMARA",
+    "patch": "201830"
+  },
+  {
+    "name": "AGENDA_ENDEREÇO",
+    "patch": "201830"
+  },
+  {
+    "name": "AGENDA_TELEFONES",
+    "patch": "201830"
+  },
+  {
+    "name": "AGENTE_ATIVO",
+    "patch": "201830"
+  },
+  {
+    "name": "AGENTE_PASSIVO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)ÁGUA",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁGUA_COCO",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁGUA_JURISDICIONAL",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁGUA_SANITÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "AGUA_VIVA",
+    "patch": "201830"
+  },
+  {
+    "name": "AH!",
+    "patch": "201830"
+  },
+  {
+    "name": "AJUDAR_CUSTO",
+    "patch": "201830"
+  },
+  {
+    "name": "ALCOOLIZAR_SE",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)ALTO",
+    "patch": "201830"
+  },
+  {
+    "name": "ALTO-FALANTE",
+    "patch": "201830"
+  },
+  {
+    "name": "ALTO-MAR",
+    "patch": "201830"
+  },
+  {
+    "name": "ALVARÁ_SOLTURA",
+    "patch": "201830"
+  },
+  {
+    "name": "AMADURECIDO_FRUTAS",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)AMAR",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)AMAR",
+    "patch": "201830"
+  },
+  {
+    "name": "AMEAÇADOS_DE_EXTINÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "AMIGO_DE_INFANCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "AMIGO_INTIMO",
+    "patch": "201830"
+  },
+  {
+    "name": "AMORTIZAÇÃO_EMPRÉSTIMO",
+    "patch": "201830"
+  },
+  {
+    "name": "AMPLIFICADOR_INDUÇÃO_MAGNÉTICA",
+    "patch": "201830"
+  },
+  {
+    "name": "ANAIS_ASSEMBLÉIA_NACIONAL_CONSTITUINTE",
+    "patch": "201830"
+  },
+  {
+    "name": "ANAIS_CÂMARA_DEPUTADOS",
+    "patch": "201830"
+  },
+  {
+    "name": "ANAL_ASSEMBLEIA_NACIONAL_CONSTITUINTE",
+    "patch": "201830"
+  },
+  {
+    "name": "ANAL_CÂMARA_DEPUTADO",
+    "patch": "201830"
+  },
+  {
+    "name": "ANDAR_ANIMAL",
+    "patch": "201830"
+  },
+  {
+    "name": "ANDAR_BICICLETA",
+    "patch": "201830"
+  },
+  {
+    "name": "ANDAR_CAMBALEANDO",
+    "patch": "201830"
+  },
+  {
+    "name": "ANDAR_CARRO",
+    "patch": "201830"
+  },
+  {
+    "name": "ANDAR_CAVALO",
+    "patch": "201830"
+  },
+  {
+    "name": "ANDAR_CORDA_BAMBA",
+    "patch": "201830"
+  },
+  {
+    "name": "ANDAR_EDIFÍCIL",
+    "patch": "201830"
+  },
+  {
+    "name": "ANDAR_PONTAS_DOS_PÉS",
+    "patch": "201830"
+  },
+  {
+    "name": "ANDAR_SUAVE",
+    "patch": "201830"
+  },
+  {
+    "name": "ANDAR_SUPERIOR_EDIFICIO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)ANIMADO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)ANIMADO",
+    "patch": "201830"
+  },
+  {
+    "name": "ANIMAL_ESTIMAÇÃO_(DOMÉSTICOS)",
+    "patch": "201830"
+  },
+  {
+    "name": "ANIMAL_EXTINTOS",
+    "patch": "201830"
+  },
+  {
+    "name": "ANIMAL_SELVAGEM",
+    "patch": "201830"
+  },
+  {
+    "name": "ANSIEDADE_SOCIAL",
+    "patch": "201830"
+  },
+  {
+    "name": "ANTÁRTIDA",
+    "patch": "201830"
+  },
+  {
+    "name": "ANTECIPAÇÃO_RECEITA_ORÇAMENTÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "ANTENA_PARABÓLICA",
+    "patch": "201830"
+  },
+  {
+    "name": "ANTICORRUPÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "ANUALIDADE_TRIBUTO",
+    "patch": "201830"
+  },
+  {
+    "name": "ANULAÇÃO_EMPENHO",
+    "patch": "201830"
+  },
+  {
+    "name": "ANULAÇÃO_PROVISÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "APAGAR_LOUSA",
+    "patch": "201830"
+  },
+  {
+    "name": "APAGAR_LUZ",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)APAIXONADO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)APAIXONADO",
+    "patch": "201830"
+  },
+  {
+    "name": "APANHAR_OBJETO",
+    "patch": "201830"
+  },
+  {
+    "name": "APARECIDA_DO_NORTE",
+    "patch": "201830"
+  },
+  {
+    "name": "APARELHO_SOM",
+    "patch": "201830"
+  },
+  {
+    "name": "APLICAÇAO_FINANCEIRA",
+    "patch": "201830"
+  },
+  {
+    "name": "APLICAR_INJEÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "APOLICE",
+    "patch": "201830"
+  },
+  {
+    "name": "APONTAR_LÁPIS",
+    "patch": "201830"
+  },
+  {
+    "name": "APOSENTADORIA_INVALIDEZ",
+    "patch": "201830"
+  },
+  {
+    "name": "APOSTOLO",
+    "patch": "201830"
+  },
+  {
+    "name": "APÓSTOLOS",
+    "patch": "201830"
+  },
+  {
+    "name": "APRECIAÇÃO_VETO",
+    "patch": "201830"
+  },
+  {
+    "name": "APRESENTAÇÃO_PROPOSIÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "APRESENTAR_PROJETO_LEI",
+    "patch": "201830"
+  },
+  {
+    "name": "APRESENTAR-SE",
+    "patch": "201830"
+  },
+  {
+    "name": "APROVAÇÃO_PROJETO",
+    "patch": "201830"
+  },
+  {
+    "name": "APURAÇÃO_HAVER",
+    "patch": "201830"
+  },
+  {
+    "name": "AQUISIÇÃO_LINGUAGEM",
+    "patch": "201830"
+  },
+  {
+    "name": "ARACNÍDEOS",
+    "patch": "201830"
+  },
+  {
+    "name": "ARAQUE",
+    "patch": "201830"
+  },
+  {
+    "name": "ARCAR",
+    "patch": "201830"
+  },
+  {
+    "name": "ARCO_CABELO",
+    "patch": "201830"
+  },
+  {
+    "name": "ARCO_FLECHA",
+    "patch": "201830"
+  },
+  {
+    "name": "ARCO-ÍRIS",
+    "patch": "201830"
+  },
+  {
+    "name": "AR-CONDICIONADO",
+    "patch": "201830"
+  },
+  {
+    "name": "ARCORVERDE",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁREA_APROXIMAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁREA_DESEMBARQUE",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁREA_EMBARQUE",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁREA_URBANO",
+    "patch": "201830"
+  },
+  {
+    "name": "AREIA_PRAIA",
+    "patch": "201830"
+  },
+  {
+    "name": "ARMA_FOGO",
+    "patch": "201830"
+  },
+  {
+    "name": "ARMAMENTOS",
+    "patch": "201830"
+  },
+  {
+    "name": "ARQUIVAMENTO_PROPOSIÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "ARRANCAR_DENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "ARRASTAR_SE",
+    "patch": "201830"
+  },
+  {
+    "name": "ARRIMO_FAMÍLIA",
+    "patch": "201830"
+  },
+  {
+    "name": "ASPIRADOR_PÓ",
+    "patch": "201830"
+  },
+  {
+    "name": "ASSEMBLÉIA_NACIONAL_CONSTITUINTE",
+    "patch": "201830"
+  },
+  {
+    "name": "AS_VEZES",
+    "patch": "201830"
+  },
+  {
+    "name": "ATEAR_FOGO",
+    "patch": "201830"
+  },
+  {
+    "name": "ATENTADO_11_SETEMBRO",
+    "patch": "201830"
+  },
+  {
+    "name": "ATIRAR_OBJETOS",
+    "patch": "201830"
+  },
+  {
+    "name": "ATLÉTICO_MINEIRO",
+    "patch": "201830"
+  },
+  {
+    "name": "ATO_MESA",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁTOMO_1",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁTOMO_2",
+    "patch": "201830"
+  },
+  {
+    "name": "ATRACAÇÃO_NAVIO",
+    "patch": "201830"
+  },
+  {
+    "name": "AUDIÊNCIA_COMISSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "AUDITORIA_CONFORMIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁUGE",
+    "patch": "201830"
+  },
+  {
+    "name": "AUMENTAR_PESO_PESSOA",
+    "patch": "201830"
+  },
+  {
+    "name": "AUMENTAR_PREÇO",
+    "patch": "201830"
+  },
+  {
+    "name": "AUMENTAR_VOLUME_SOM",
+    "patch": "201830"
+  },
+  {
+    "name": "AUTÓDROMO_INTERLAGOS",
+    "patch": "201830"
+  },
+  {
+    "name": "AUTOEXAME_MAMA",
+    "patch": "201830"
+  },
+  {
+    "name": "AUTÓGRAFOS_ASSINATURA",
+    "patch": "201830"
+  },
+  {
+    "name": "AUTO_INFRAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "AUTOMZATIZADA",
+    "patch": "201830"
+  },
+  {
+    "name": "AUTO_PROCESSO",
+    "patch": "201830"
+  },
+  {
+    "name": "AUTOR_PROPOSIÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "AUXILIAR_ENFERMAGEM",
+    "patch": "201830"
+  },
+  {
+    "name": "AVANÇAR_SINAL_TRÂNSITO",
+    "patch": "201830"
+  },
+  {
+    "name": "AVIÃO_JATO",
+    "patch": "201830"
+  },
+  {
+    "name": "ÁVOREDO",
+    "patch": "201830"
+  },
+  {
+    "name": "AZAR_SEU",
+    "patch": "201830"
+  },
+  {
+    "name": "BAIÃO_DOIS",
+    "patch": "201830"
+  },
+  {
+    "name": "BALANÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "BALÃO_AR",
+    "patch": "201830"
+  },
+  {
+    "name": "BALÃO_BEXIGA",
+    "patch": "201830"
+  },
+  {
+    "name": "BALÃO_SÃO_JOÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "BALE",
+    "patch": "201830"
+  },
+  {
+    "name": "BANCA_JORNAL",
+    "patch": "201830"
+  },
+  {
+    "name": "BANCARROTA",
+    "patch": "201830"
+  },
+  {
+    "name": "BANCO_ASSENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "BANGUE-BANGUE",
+    "patch": "201830"
+  },
+  {
+    "name": "BANHAR_SE",
+    "patch": "201830"
+  },
+  {
+    "name": "BARRA_FERRO",
+    "patch": "201830"
+  },
+  {
+    "name": "BARRA_ROLAGEM",
+    "patch": "201830"
+  },
+  {
+    "name": "BARREIRAS",
+    "patch": "201830"
+  },
+  {
+    "name": "BARREIRINHAS",
+    "patch": "201830"
+  },
+  {
+    "name": "BASE_CÁLCULO",
+    "patch": "201830"
+  },
+  {
+    "name": "BASE_ELEITORAL",
+    "patch": "201830"
+  },
+  {
+    "name": "BASE_INFORMÁTICA",
+    "patch": "201830"
+  },
+  {
+    "name": "BASE_MAQUIAGEM",
+    "patch": "201830"
+  },
+  {
+    "name": "BASE_(QUÍMICA)",
+    "patch": "201830"
+  },
+  {
+    "name": "BASTA!",
+    "patch": "201830"
+  },
+  {
+    "name": "BASTA_DE_VEZ!",
+    "patch": "201830"
+  },
+  {
+    "name": "BATE_BOCA",
+    "patch": "201830"
+  },
+  {
+    "name": "BATE-PAPO",
+    "patch": "201830"
+  },
+  {
+    "name": "BATER_CARRO",
+    "patch": "201830"
+  },
+  {
+    "name": "BATER_PORTA",
+    "patch": "201830"
+  },
+  {
+    "name": "BATIDA_BEBIDA",
+    "patch": "201830"
+  },
+  {
+    "name": "BATIDA_CORAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)BÊBADO",
+    "patch": "201830"
+  },
+  {
+    "name": "BEIJA-FLOR",
+    "patch": "201830"
+  },
+  {
+    "name": "BEM_ESTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "BEM_FEITO!",
+    "patch": "201830"
+  },
+  {
+    "name": "BEM_SEMOVENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "BEM_SUCEDIDO",
+    "patch": "201830"
+  },
+  {
+    "name": "BEM-VINDO",
+    "patch": "201830"
+  },
+  {
+    "name": "BENÇAO",
+    "patch": "201830"
+  },
+  {
+    "name": "BERGAMOTA",
+    "patch": "201830"
+  },
+  {
+    "name": "BEXIGA_BOLA",
+    "patch": "201830"
+  },
+  {
+    "name": "BEXIGA_ORGAO",
+    "patch": "201830"
+  },
+  {
+    "name": "BICEPS",
+    "patch": "201830"
+  },
+  {
+    "name": "BICHO_PAPAO",
+    "patch": "201830"
+  },
+  {
+    "name": "BICHO-PREGUIÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "BICHOPREGUIÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "BINOCULO",
+    "patch": "201830"
+  },
+  {
+    "name": "BIQUÍNI",
+    "patch": "201830"
+  },
+  {
+    "name": "BLITZ_TRÂNSITO",
+    "patch": "201830"
+  },
+  {
+    "name": "BLUMENAU_CIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "BLUSH_MAQUIAGEM",
+    "patch": "201830"
+  },
+  {
+    "name": "BOA_VISTA_CIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "BOCA_FUMO",
+    "patch": "201830"
+  },
+  {
+    "name": "BOCA_URNA",
+    "patch": "201830"
+  },
+  {
+    "name": "BOLA_CRISTAL",
+    "patch": "201830"
+  },
+  {
+    "name": "BOLA_PINGUE_PONGUE",
+    "patch": "201830"
+  },
+  {
+    "name": "BOLA_SORVETE",
+    "patch": "201830"
+  },
+  {
+    "name": "BOLETIM_ADMINISTRATIVO_CÂMARA_DEPUTADO",
+    "patch": "201830"
+  },
+  {
+    "name": "BOLETIM_URNA",
+    "patch": "201830"
+  },
+  {
+    "name": "BOLSA_ATLETA",
+    "patch": "201830"
+  },
+  {
+    "name": "BOLSA_ESTUDO",
+    "patch": "201830"
+  },
+  {
+    "name": "BOLSA_VALOR",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)BOM",
+    "patch": "201830"
+  },
+  {
+    "name": "BOM_JESUS_DO_NORTE",
+    "patch": "201830"
+  },
+  {
+    "name": "BOSNIA_HEZERGOVINA",
+    "patch": "201830"
+  },
+  {
+    "name": "BOTAO_DIREITO_DO_MOUSE",
+    "patch": "201830"
+  },
+  {
+    "name": "BOTIJÃO_GÁS",
+    "patch": "201830"
+  },
+  {
+    "name": "BRAÇO_FERRO",
+    "patch": "201830"
+  },
+  {
+    "name": "BRADESCO",
+    "patch": "201830"
+  },
+  {
+    "name": "BRECHA_LEI",
+    "patch": "201830"
+  },
+  {
+    "name": "BRINCAR_BOLINHA_GUDE",
+    "patch": "201830"
+  },
+  {
+    "name": "BRINCAR_EMPINAR_PIPA",
+    "patch": "201830"
+  },
+  {
+    "name": "BRINCAR_PEBOLIM",
+    "patch": "201830"
+  },
+  {
+    "name": "BRINCAR_PETECA",
+    "patch": "201830"
+  },
+  {
+    "name": "BRINCAR_PULAR_CORDA",
+    "patch": "201830"
+  },
+  {
+    "name": "BULGARIA",
+    "patch": "201830"
+  },
+  {
+    "name": "BURKINA_FASO",
+    "patch": "201830"
+  },
+  {
+    "name": "BURSITE_QUADRIL",
+    "patch": "201830"
+  },
+  {
+    "name": "CABEDELO_CIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "CABO_DE_SANTO_AGOSTINHO_CIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "CABO_ELETRICO",
+    "patch": "201830"
+  },
+  {
+    "name": "CABO_MILITAR",
+    "patch": "201830"
+  },
+  {
+    "name": "CACHO_CABELO",
+    "patch": "201830"
+  },
+  {
+    "name": "CACHORRO-QUENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "CADASTRO_FORNECEDOR",
+    "patch": "201830"
+  },
+  {
+    "name": "CADEIA_COMANDO",
+    "patch": "201830"
+  },
+  {
+    "name": "CADERNETA_POUPANÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "CAFÉ_MANHÃ",
+    "patch": "201830"
+  },
+  {
+    "name": "CAIXA_2",
+    "patch": "201830"
+  },
+  {
+    "name": "CALAR_BOCA",
+    "patch": "201830"
+  },
+  {
+    "name": "CALÇAR_OPERAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "CALDO_CANA",
+    "patch": "201830"
+  },
+  {
+    "name": "CALDO_PEIXE",
+    "patch": "201830"
+  },
+  {
+    "name": "CALENDÁRIO_VACINAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "CALIBRE_ARMA",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)CALMO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)CALMO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)CALOR",
+    "patch": "201830"
+  },
+  {
+    "name": "CAMAÇARI_CIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "CAMADAS",
+    "patch": "201830"
+  },
+  {
+    "name": "CAMADAS_DE_VALÊNCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "CÂMARA_DEPUTADO",
+    "patch": "201830"
+  },
+  {
+    "name": "CÂMARA_DEPUTADOS",
+    "patch": "201830"
+  },
+  {
+    "name": "CÂMARA_LEGISLATIVA_DISTRITO_FEDERAL",
+    "patch": "201830"
+  },
+  {
+    "name": "CÂMERA_FOTOGRÁFICA",
+    "patch": "201830"
+  },
+  {
+    "name": "CÂMERA_SEGURANÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "CÂMERA_VIGILÂNCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "CAMPEÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "CAMPO_BATALHA",
+    "patch": "201830"
+  },
+  {
+    "name": "CAMPO_FUTEBOL",
+    "patch": "201830"
+  },
+  {
+    "name": "CAMPO_LIMPO",
+    "patch": "201830"
+  },
+  {
+    "name": "CANAL_TV",
+    "patch": "201830"
+  },
+  {
+    "name": "CANDOMBLÉ",
+    "patch": "201830"
+  },
+  {
+    "name": "CANHOTO_CHEQUE",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)CANSADO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)CANSADO",
+    "patch": "201830"
+  },
+  {
+    "name": "CÂNTICO-DOS_CÂNTICOS",
+    "patch": "201830"
+  },
+  {
+    "name": "CAÓTICOS",
+    "patch": "201830"
+  },
+  {
+    "name": "CAPA_CADERNO",
+    "patch": "201830"
+  },
+  {
+    "name": "CAPA_CHUVA",
+    "patch": "201830"
+  },
+  {
+    "name": "CAPITANIA_PORTO",
+    "patch": "201830"
+  },
+  {
+    "name": "CAPITÃO_EXÉRCITO",
+    "patch": "201830"
+  },
+  {
+    "name": "CAPITÃO_GANCHO",
+    "patch": "201830"
+  },
+  {
+    "name": "CARTÃO_CRÉDITO",
+    "patch": "201830"
+  },
+  {
+    "name": "CARTÃO_PONTO",
+    "patch": "201830"
+  },
+  {
+    "name": "CARTEIRA_HABILITAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "CARTEIRA_IDENTIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "CASSAÇÃO_MANDATO",
+    "patch": "201830"
+  },
+  {
+    "name": "CASTANHOLAS",
+    "patch": "201830"
+  },
+  {
+    "name": "CD-ROM",
+    "patch": "201830"
+  },
+  {
+    "name": "CEM",
+    "patch": "201830"
+  },
+  {
+    "name": "CENSURA_PARLAMENTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "CENTRIFUGAÇAO",
+    "patch": "201830"
+  },
+  {
+    "name": "CERTIDÃO_CASAMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "CERTIDÃO_NASCIMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "CERTIDÃO_REGISTRO_LICENCIAMENTO_VEÍCULO",
+    "patch": "201830"
+  },
+  {
+    "name": "CESTO_LIXO",
+    "patch": "201830"
+  },
+  {
+    "name": "CESTO_PAPEL",
+    "patch": "201830"
+  },
+  {
+    "name": "CHANTILI",
+    "patch": "201830"
+  },
+  {
+    "name": "CHAPEUZINHO_VERMELHO",
+    "patch": "201830"
+  },
+  {
+    "name": "CHAVE_ELÉTRICA",
+    "patch": "201830"
+  },
+  {
+    "name": "CHAVE_FENDA",
+    "patch": "201830"
+  },
+  {
+    "name": "CHAVE_PHILIPS",
+    "patch": "201830"
+  },
+  {
+    "name": "CHAVE_SEXTAVADA",
+    "patch": "201830"
+  },
+  {
+    "name": "CHECK_AND_BALANCE",
+    "patch": "201830"
+  },
+  {
+    "name": "CHEFE_ESTADO",
+    "patch": "201830"
+  },
+  {
+    "name": "CHEFE_GOVERNO",
+    "patch": "201830"
+  },
+  {
+    "name": "CHEQUE_SEM_PROFUNDO",
+    "patch": "201830"
+  },
+  {
+    "name": "CHEQUE_SEM_PROVISÃO_PROFUNDO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)CHORAR",
+    "patch": "201830"
+  },
+  {
+    "name": "CIÊNCIA_BIOLÓGICA",
+    "patch": "201830"
+  },
+  {
+    "name": "CIÊNCIA_COMPUTAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "CIÊNCIA_ECONÔMICA",
+    "patch": "201830"
+  },
+  {
+    "name": "CINTO_SEGURANÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "CIRCULARIZAÇÃO_CONFIRMAÇÃO_EXTERNA",
+    "patch": "201830"
+  },
+  {
+    "name": "CIRCUNSCRIÇÃO_ELEITORAL",
+    "patch": "201830"
+  },
+  {
+    "name": "CIVILIZATÓRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "CIVILIZATÓRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "CL",
+    "patch": "201830"
+  },
+  {
+    "name": "CLÁUSULAS_PÉTREAS",
+    "patch": "201830"
+  },
+  {
+    "name": "COCA-COLA",
+    "patch": "201830"
+  },
+  {
+    "name": "COCEGAS",
+    "patch": "201830"
+  },
+  {
+    "name": "CÓDIGO_ÉTICA",
+    "patch": "201830"
+  },
+  {
+    "name": "COITO_VAGÍNICO",
+    "patch": "201830"
+  },
+  {
+    "name": "COLÉGIO_LÍDERES",
+    "patch": "201830"
+  },
+  {
+    "name": "COLOCADA",
+    "patch": "201830"
+  },
+  {
+    "name": "COLOCADO",
+    "patch": "201830"
+  },
+  {
+    "name": "COLOCANDO",
+    "patch": "201830"
+  },
+  {
+    "name": "COLOCAREM",
+    "patch": "201830"
+  },
+  {
+    "name": "COLORIDA",
+    "patch": "201830"
+  },
+  {
+    "name": "COLUNA_VERTEBRAL",
+    "patch": "201830"
+  },
+  {
+    "name": "COMISSÃO_MÉRITO",
+    "patch": "201830"
+  },
+  {
+    "name": "COMISSÃO_MISTA_ORÇAMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "COMISSÃO_PARLAMENTAR_CONJUNTA_MERCOSUL",
+    "patch": "201830"
+  },
+  {
+    "name": "COMISSÃO_PARLAMENTAR_INQUÉRITO",
+    "patch": "201830"
+  },
+  {
+    "name": "COMISSÃO_REPRESENTATIVA_CONGRESSO_NACIONAL",
+    "patch": "201830"
+  },
+  {
+    "name": "COMISSÁRIA_BORDO",
+    "patch": "201830"
+  },
+  {
+    "name": "COMISSÕES_MISTA",
+    "patch": "201830"
+  },
+  {
+    "name": "COMISSÕES_PERMANENTES",
+    "patch": "201830"
+  },
+  {
+    "name": "COMISSÕES_TEMPORÁRIAS",
+    "patch": "201830"
+  },
+  {
+    "name": "COMMAND_INFORMÁTICA",
+    "patch": "201830"
+  },
+  {
+    "name": "COMO_IR_VOCÊ",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)COMPLICADO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)COMPLICADO",
+    "patch": "201830"
+  },
+  {
+    "name": "COMPOSTAGEM_RESÍDUO_ORGÂNICO",
+    "patch": "201830"
+  },
+  {
+    "name": "COMPROMISSO_SOLENE_POSE",
+    "patch": "201830"
+  },
+  {
+    "name": "COMUNICAÇÃO_LIDERANÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "COMUNICAÇÃO_POLÍTICO",
+    "patch": "201830"
+  },
+  {
+    "name": "CONGELADO_QUÍMICA",
+    "patch": "201830"
+  },
+  {
+    "name": "CONGELAMENTO_PREÇO",
+    "patch": "201830"
+  },
+  {
+    "name": "CONGELAMENTO_SALÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "CONJUNÇÃO_CARNAL",
+    "patch": "201830"
+  },
+  {
+    "name": "CONSELHO_ÉTICA_DECORO_PARLAMENTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "CONSOLIDAÇÃO_LEI",
+    "patch": "201830"
+  },
+  {
+    "name": "CONSTITUINTE_ORIGINÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "CONSULTORIA_ORÇAMENTO_FISCALIZAÇÃO_FINANCEIRA",
+    "patch": "201830"
+  },
+  {
+    "name": "CONTA_BANCÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "CONTA_CORRENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "CONTA_GOTA",
+    "patch": "201830"
+  },
+  {
+    "name": "CONTA-GOTAS",
+    "patch": "201830"
+  },
+  {
+    "name": "CONTAR_ÁGUA",
+    "patch": "201830"
+  },
+  {
+    "name": "CONTAR_ESTÓRIAS",
+    "patch": "201830"
+  },
+  {
+    "name": "CONTAR_LUZ",
+    "patch": "201830"
+  },
+  {
+    "name": "CONTA_TELEFONE",
+    "patch": "201830"
+  },
+  {
+    "name": "CONTRA-INTELIGÊNCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "CONVITE_TIPO_LICITAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "CÓPULA_VAGINAL",
+    "patch": "201830"
+  },
+  {
+    "name": "COREIA",
+    "patch": "201830"
+  },
+  {
+    "name": "CORPO_JURADO",
+    "patch": "201830"
+  },
+  {
+    "name": "CORTÊZ",
+    "patch": "201830"
+  },
+  {
+    "name": "COSTA_LITORAL",
+    "patch": "201830"
+  },
+  {
+    "name": "COSTURAR_HOMEM",
+    "patch": "201830"
+  },
+  {
+    "name": "COUVE-FLOR",
+    "patch": "201830"
+  },
+  {
+    "name": "CREME_CABELO",
+    "patch": "201830"
+  },
+  {
+    "name": "CREME_DENTAL",
+    "patch": "201830"
+  },
+  {
+    "name": "CRIAÇÃO_MUNDO",
+    "patch": "201830"
+  },
+  {
+    "name": "CRIAÇÃO_PERSONAGEM",
+    "patch": "201830"
+  },
+  {
+    "name": "CRIME_COLARINHO_BRANCO",
+    "patch": "201830"
+  },
+  {
+    "name": "CRIME_PREVARIAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "CRIME_RECEPTAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "CRIME_RESPONSABILIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "CRISE_POLÍTICO",
+    "patch": "201830"
+  },
+  {
+    "name": "CUBO_GELO",
+    "patch": "201830"
+  },
+  {
+    "name": "CUMPRIMENTO_META",
+    "patch": "201830"
+  },
+  {
+    "name": "CURRÍCULO_VITAE",
+    "patch": "201830"
+  },
+  {
+    "name": "CURTO-CIRCUITO",
+    "patch": "201830"
+  },
+  {
+    "name": "DAR_BRONCA",
+    "patch": "201830"
+  },
+  {
+    "name": "DAR_EMPRESTADO",
+    "patch": "201830"
+  },
+  {
+    "name": "DAR_INCENTIVO",
+    "patch": "201830"
+  },
+  {
+    "name": "DAR_NÓ",
+    "patch": "201830"
+  },
+  {
+    "name": "DAY-TRADE",
+    "patch": "201830"
+  },
+  {
+    "name": "DECLARAÇÃO_VOTO",
+    "patch": "201830"
+  },
+  {
+    "name": "DECURSO_PRAZO",
+    "patch": "201830"
+  },
+  {
+    "name": "DEDUÇÃO_IMPOSTO",
+    "patch": "201830"
+  },
+  {
+    "name": "DÉFICIT_CAIXA",
+    "patch": "201830"
+  },
+  {
+    "name": "DÉFICIT_CAIXA_TESOURO_NACIONAL",
+    "patch": "201830"
+  },
+  {
+    "name": "DELCARAR",
+    "patch": "201830"
+  },
+  {
+    "name": "DELEGACIA_POLÍCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "DENTE_ALHO",
+    "patch": "201830"
+  },
+  {
+    "name": "DENTE_LEITE",
+    "patch": "201830"
+  },
+  {
+    "name": "DERRAMAR_CEREBRAL",
+    "patch": "201830"
+  },
+  {
+    "name": "DESARQUIVAMENTO_PROPOSIÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "DESCENTRALIZAÇÃO_CRÉDITO_ORÇAMENTÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "DESCOLAR_GRANA",
+    "patch": "201830"
+  },
+  {
+    "name": "DESCTARADO",
+    "patch": "201830"
+  },
+  {
+    "name": "DESEMBARACAR",
+    "patch": "201830"
+  },
+  {
+    "name": "DESIGNACAO",
+    "patch": "201830"
+  },
+  {
+    "name": "DESPACHO_DOCUMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "DESPACHO_PROCESSO",
+    "patch": "201830"
+  },
+  {
+    "name": "DESPENÇAR",
+    "patch": "201830"
+  },
+  {
+    "name": "DESPROPOSITO",
+    "patch": "201830"
+  },
+  {
+    "name": "DESTACAR_PARA_VOTAÇÃO_SEPARADO",
+    "patch": "201830"
+  },
+  {
+    "name": "DESTACAR_SUPRESSIVO_SIMPLES",
+    "patch": "201830"
+  },
+  {
+    "name": "DIAGRAMA_DE_LINUS_PAULING_E_DISTRIBUIÇÃO_ELETRÔNICA",
+    "patch": "201830"
+  },
+  {
+    "name": "DIARIAMENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "DIÁRIO_CÂMARA_DEPUTADO",
+    "patch": "201830"
+  },
+  {
+    "name": "DIA_SEMANA",
+    "patch": "201830"
+  },
+  {
+    "name": "DILIGENCIAR",
+    "patch": "201830"
+  },
+  {
+    "name": "DIREITO_ANTENA",
+    "patch": "201830"
+  },
+  {
+    "name": "DISCAR_CÂMARA",
+    "patch": "201830"
+  },
+  {
+    "name": "DISRIBUÍDO",
+    "patch": "201830"
+  },
+  {
+    "name": "DISTINGUI",
+    "patch": "201830"
+  },
+  {
+    "name": "DÍVIDA_FUNDADO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)DOENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)DOER",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)DOR",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)DOR",
+    "patch": "201830"
+  },
+  {
+    "name": "DOR_CABEÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "DURA_PENA",
+    "patch": "201830"
+  },
+  {
+    "name": "E-BOOK",
+    "patch": "201830"
+  },
+  {
+    "name": "E-COMMERCE",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)EFICAZ",
+    "patch": "201830"
+  },
+  {
+    "name": "ELEITOR_CABRESTO",
+    "patch": "201830"
+  },
+  {
+    "name": "ELETROELETRÔNICOS",
+    "patch": "201830"
+  },
+  {
+    "name": "E-MAIL",
+    "patch": "201830"
+  },
+  {
+    "name": "EMBAIXADA",
+    "patch": "201830"
+  },
+  {
+    "name": "EMBARGO_DECLARAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "EM_DETALHES",
+    "patch": "201830"
+  },
+  {
+    "name": "EMENDA_COMISSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "EMENDA_PLENÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)EMOCIONADO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)EMOCIONADO",
+    "patch": "201830"
+  },
+  {
+    "name": "EMPENHAR-SE",
+    "patch": "201830"
+  },
+  {
+    "name": "EMPINAR_PIPA",
+    "patch": "201830"
+  },
+  {
+    "name": "EMPREGAR",
+    "patch": "201830"
+  },
+  {
+    "name": "ENCAMINHAMENTO_VOTAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENCARAR",
+    "patch": "201830"
+  },
+  {
+    "name": "ENCARAR-SE",
+    "patch": "201830"
+  },
+  {
+    "name": "ENCARECER",
+    "patch": "201830"
+  },
+  {
+    "name": "ENCARGO_DÍVIDA",
+    "patch": "201830"
+  },
+  {
+    "name": "ENCERRAMENTO_DISCUSSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENCORAJAR",
+    "patch": "201830"
+  },
+  {
+    "name": "ENDERECAR",
+    "patch": "201830"
+  },
+  {
+    "name": "ENDERECO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENFERMEIRA_HOME_CARE",
+    "patch": "201830"
+  },
+  {
+    "name": "ENFORCAR",
+    "patch": "201830"
+  },
+  {
+    "name": "ENGANAR-ME",
+    "patch": "201830"
+  },
+  {
+    "name": "ENGANAR-SE",
+    "patch": "201830"
+  },
+  {
+    "name": "ENGENHARIA_DA_COMPUTAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENGENHEIRO_AGRONOMO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENROLAR-SE",
+    "patch": "201830"
+  },
+  {
+    "name": "ENSINO_DE_PÓS-DOUTRADO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENSINO_DE_PÓS-GRADUAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENSINO_ESSENCIAL",
+    "patch": "201830"
+  },
+  {
+    "name": "ENSINO_MEDIO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENTORPECENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "ENTRAR_EM_CONTATO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENTRAR_VIGOR",
+    "patch": "201830"
+  },
+  {
+    "name": "ENTREMETER-SE",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)ENVERGONHADO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)ENVERGONHADO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENVIAMO",
+    "patch": "201830"
+  },
+  {
+    "name": "ENXOTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "ENXUGAR_LÁGRIMAS",
+    "patch": "201830"
+  },
+  {
+    "name": "ENXUGAR_LOUÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "EPISODIO",
+    "patch": "201830"
+  },
+  {
+    "name": "EQUAÇÃO_QUÍMICA",
+    "patch": "201830"
+  },
+  {
+    "name": "ERVA-DOCE",
+    "patch": "201830"
+  },
+  {
+    "name": "ERVA-MATE",
+    "patch": "201830"
+  },
+  {
+    "name": "ESBOFETEAR-ME",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCADA_CARACOL",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCADA_ESPIRAL",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCADA_ROLANTE",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCOLA_LÍDERES",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCONDE-ESCONDE",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCORRAÇADO",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCORRAÇAR",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCOVA_DE_CABELO",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCOVA_DE_DENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCOVA_DE_LAVAR_ROUPA",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCOVA_DE_SAPATO",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCOVA_DE_USO_GERAL",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCREVER",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCREVER_NO_QUADRO-NEGRO",
+    "patch": "201830"
+  },
+  {
+    "name": "ESCRITURA_DE_IMÓVEIS",
+    "patch": "201830"
+  },
+  {
+    "name": "ESFORÇO_CONCENTRADO_CONGRESSO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)ESPERTO",
+    "patch": "201830"
+  },
+  {
+    "name": "ESPÍRITO_CORPO",
+    "patch": "201830"
+  },
+  {
+    "name": "ESPREMEDOR_ALHO",
+    "patch": "201830"
+  },
+  {
+    "name": "ESTABILIZADOR_ENERGIA",
+    "patch": "201830"
+  },
+  {
+    "name": "ESTÁDIO_FUTEBOL",
+    "patch": "201830"
+  },
+  {
+    "name": "ESTADOS_BRASIL",
+    "patch": "201830"
+  },
+  {
+    "name": "ESTADO_UNIDO",
+    "patch": "201830"
+  },
+  {
+    "name": "ESTÁGIO_DESPESA",
+    "patch": "201830"
+  },
+  {
+    "name": "ESTÁGIO_RECEITA",
+    "patch": "201830"
+  },
+  {
+    "name": "ESTAR_FIM",
+    "patch": "201830"
+  },
+  {
+    "name": "ESTOQUES",
+    "patch": "201830"
+  },
+  {
+    "name": "ESTRELA_MAR",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)ESTUDIOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)ESTUDIOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "ESTUDO_SOCIAL",
+    "patch": "201830"
+  },
+  {
+    "name": "EXERCÍCIO_ANTERIOR",
+    "patch": "201830"
+  },
+  {
+    "name": "EXERCÍCIO_CAMPANHA",
+    "patch": "201830"
+  },
+  {
+    "name": "EX_OFÍCIO_PASSADO",
+    "patch": "201830"
+  },
+  {
+    "name": "EXONERAÇÃO_ALIMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "EXPERIMENTO_QUÍMICO",
+    "patch": "201830"
+  },
+  {
+    "name": "EXPLOSIVOS",
+    "patch": "201830"
+  },
+  {
+    "name": "EXTENSÃO_ARQUIVO",
+    "patch": "201830"
+  },
+  {
+    "name": "EXTRATO_BANCÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)FÁCIL",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)FÁCIL",
+    "patch": "201830"
+  },
+  {
+    "name": "FACILIMO",
+    "patch": "201830"
+  },
+  {
+    "name": "FAGUEIRO_AFÁVEL",
+    "patch": "201830"
+  },
+  {
+    "name": "FAIXA_PEDESTRE",
+    "patch": "201830"
+  },
+  {
+    "name": "FAIXA_PEDRESTE",
+    "patch": "201830"
+  },
+  {
+    "name": "FALAR_BESTEIRA",
+    "patch": "201830"
+  },
+  {
+    "name": "FALAR_MAL",
+    "patch": "201830"
+  },
+  {
+    "name": "FALE!",
+    "patch": "201830"
+  },
+  {
+    "name": "FALTA_AR",
+    "patch": "201830"
+  },
+  {
+    "name": "FARINHA_D_ÁGUA",
+    "patch": "201830"
+  },
+  {
+    "name": "FARINHA_ROSCA",
+    "patch": "201830"
+  },
+  {
+    "name": "FAROL_NAVEGAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "FAROL_VEÍCULO",
+    "patch": "201830"
+  },
+  {
+    "name": "FARRAPOS",
+    "patch": "201830"
+  },
+  {
+    "name": "FARTAR-SE",
+    "patch": "201830"
+  },
+  {
+    "name": "FASE_SESSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "FATOR_IMPEDÂNCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "FAUSTÃO_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "FAZER_ALGUÉM_BOBO",
+    "patch": "201830"
+  },
+  {
+    "name": "FAZER_BISCATE",
+    "patch": "201830"
+  },
+  {
+    "name": "FAZER_LEITURA_LABIAL",
+    "patch": "201830"
+  },
+  {
+    "name": "FAZER-ME_BOBO",
+    "patch": "201830"
+  },
+  {
+    "name": "FECHAR_À_CHAVE",
+    "patch": "201830"
+  },
+  {
+    "name": "FECHAR_ARQUIVO",
+    "patch": "201830"
+  },
+  {
+    "name": "FECHAR_COM_TAMPA",
+    "patch": "201830"
+  },
+  {
+    "name": "FECHAR_CONTA_EM_BANCO",
+    "patch": "201830"
+  },
+  {
+    "name": "FECHAR_PORTA",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)FEIO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)FEIO",
+    "patch": "201830"
+  },
+  {
+    "name": "FEIRA_LIVRO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)FELIZ",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)FELIZ",
+    "patch": "201830"
+  },
+  {
+    "name": "FÊMEA",
+    "patch": "201830"
+  },
+  {
+    "name": "FERNANDO_AFONSO_COLLOR_MELLO_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "FERNANDO_CÉSAR_CAPOVILLA_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "FERNANDO_HENRIQUE_CARDOSO_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "FERRO_PASSA_ROUPA",
+    "patch": "201830"
+  },
+  {
+    "name": "FERRO_SOLDA",
+    "patch": "201830"
+  },
+  {
+    "name": "FICA_LÁ",
+    "patch": "201830"
+  },
+  {
+    "name": "FICAR_COM_A_CARA_NO_CHÃO!",
+    "patch": "201830"
+  },
+  {
+    "name": "FICAR_VERMELHO",
+    "patch": "201830"
+  },
+  {
+    "name": "FICOU_BEM!",
+    "patch": "201830"
+  },
+  {
+    "name": "FIDEL_CASTRO_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "FILHO_DA_PUTA!",
+    "patch": "201830"
+  },
+  {
+    "name": "FILME_FOTOGRÁFICO",
+    "patch": "201830"
+  },
+  {
+    "name": "FILTRAGEM_À_VÁCUO",
+    "patch": "201830"
+  },
+  {
+    "name": "FILTRO_ÁGUA",
+    "patch": "201830"
+  },
+  {
+    "name": "FIM_SEMANA",
+    "patch": "201830"
+  },
+  {
+    "name": "FIO_DENTAL",
+    "patch": "201830"
+  },
+  {
+    "name": "FIO_ELÉTRICO",
+    "patch": "201830"
+  },
+  {
+    "name": "FIQUE_Á_VONTADE",
+    "patch": "201830"
+  },
+  {
+    "name": "FISCALIZAÇÃO-PILOTO",
+    "patch": "201830"
+  },
+  {
+    "name": "FITA_ADESIVA",
+    "patch": "201830"
+  },
+  {
+    "name": "FITA_DENTAL",
+    "patch": "201830"
+  },
+  {
+    "name": "FLIP-FLOP",
+    "patch": "201830"
+  },
+  {
+    "name": "FODA_SE",
+    "patch": "201830"
+  },
+  {
+    "name": "FOGO_ARTIFÍCIO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)FOME",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)FOME",
+    "patch": "201830"
+  },
+  {
+    "name": "FONOAUDIÓLOGO",
+    "patch": "201830"
+  },
+  {
+    "name": "FONTE_DE_ALIMENTACAO",
+    "patch": "201830"
+  },
+  {
+    "name": "FONTE_RECURSO",
+    "patch": "201830"
+  },
+  {
+    "name": "FOR",
+    "patch": "201830"
+  },
+  {
+    "name": "FORA",
+    "patch": "201830"
+  },
+  {
+    "name": "FORA!",
+    "patch": "201830"
+  },
+  {
+    "name": "FORA_DE_CONTEXTO",
+    "patch": "201830"
+  },
+  {
+    "name": "FORÇA_AÉRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "FORÇA-TAREFA",
+    "patch": "201830"
+  },
+  {
+    "name": "FORMA_PAGAMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "FORMAR_SE",
+    "patch": "201830"
+  },
+  {
+    "name": "FORMATAR_COMPUTADOR",
+    "patch": "201830"
+  },
+  {
+    "name": "FÓRMULA_MÍNIMA_1",
+    "patch": "201830"
+  },
+  {
+    "name": "FORNO_FOGÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "FORNO_MICRO_ONDAS",
+    "patch": "201830"
+  },
+  {
+    "name": "FOSSA_NAZAL",
+    "patch": "201830"
+  },
+  {
+    "name": "FOTOGRAFAR_ME",
+    "patch": "201830"
+  },
+  {
+    "name": "FRANKENSTEIN",
+    "patch": "201830"
+  },
+  {
+    "name": "FREIO_CONTRAPESO",
+    "patch": "201830"
+  },
+  {
+    "name": "FREUD_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)FRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)FRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "FRISAR",
+    "patch": "201830"
+  },
+  {
+    "name": "FRUSTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "FRUTA-DO-CONDE",
+    "patch": "201830"
+  },
+  {
+    "name": "FUNÇÃO_ACREDITAR",
+    "patch": "201830"
+  },
+  {
+    "name": "FUNDO_PARTICIPAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "FURTO_FRUIÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "GANACIOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "GARATUJA",
+    "patch": "201830"
+  },
+  {
+    "name": "GÁS_E_GASOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "GETÚLIO_VARGAS_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "GIGABITE",
+    "patch": "201830"
+  },
+  {
+    "name": "GLORIAR_SE",
+    "patch": "201830"
+  },
+  {
+    "name": "GNT_TV",
+    "patch": "201830"
+  },
+  {
+    "name": "GOLIAS_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "GOLPE_ESTADO",
+    "patch": "201830"
+  },
+  {
+    "name": "GOMA_MASCAR",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)GORDO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)GORDO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)GOSTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)GOSTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "GOSTAR_NÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "GOZAR_DEBOCHAR",
+    "patch": "201830"
+  },
+  {
+    "name": "GOZAR_DESFRUTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "GRADE_CURRICULAR",
+    "patch": "201830"
+  },
+  {
+    "name": "GRAFAR",
+    "patch": "201830"
+  },
+  {
+    "name": "GRAFIA",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)GRANDE",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)GRANDE",
+    "patch": "201830"
+  },
+  {
+    "name": "GRAVIDA",
+    "patch": "201830"
+  },
+  {
+    "name": "GRUPO_E_FAMÍLIA_(QUÍMICA)",
+    "patch": "201830"
+  },
+  {
+    "name": "GRUPO_TRABALHO",
+    "patch": "201830"
+  },
+  {
+    "name": "GUARDA-CHUVA",
+    "patch": "201830"
+  },
+  {
+    "name": "GUARDA-ROUPA",
+    "patch": "201830"
+  },
+  {
+    "name": "GUARDA-SOL",
+    "patch": "201830"
+  },
+  {
+    "name": "GUARDA_TRÂNSITO",
+    "patch": "201830"
+  },
+  {
+    "name": "GUARDIAO",
+    "patch": "201830"
+  },
+  {
+    "name": "GUERRA_FARRAPOS",
+    "patch": "201830"
+  },
+  {
+    "name": "GUERRA_GOLFO",
+    "patch": "201830"
+  },
+  {
+    "name": "GUERRA_PARAGUAI",
+    "patch": "201830"
+  },
+  {
+    "name": "GUERRA_VIETNÃ",
+    "patch": "201830"
+  },
+  {
+    "name": "GUGU_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "GUIAR_BALIZAMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "HABITE-SE",
+    "patch": "201830"
+  },
+  {
+    "name": "HÁ_TEMPO",
+    "patch": "201830"
+  },
+  {
+    "name": "HELEN_KELLER_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "HEMOCENTROS",
+    "patch": "201830"
+  },
+  {
+    "name": "HERMENEUTICA",
+    "patch": "201830"
+  },
+  {
+    "name": "HERODES_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "HERODIAS_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "HOMEM_ENXADA",
+    "patch": "201830"
+  },
+  {
+    "name": "HOMEM_FARMÁCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "HOMEM_MÁGICA",
+    "patch": "201830"
+  },
+  {
+    "name": "HOMEM_MATAR",
+    "patch": "201830"
+  },
+  {
+    "name": "HOMEM_MEDICINA",
+    "patch": "201830"
+  },
+  {
+    "name": "HOMEM_TREINAR",
+    "patch": "201830"
+  },
+  {
+    "name": "HOMENAGEAR",
+    "patch": "201830"
+  },
+  {
+    "name": "HONRANDO",
+    "patch": "201830"
+  },
+  {
+    "name": "HORA_PICO",
+    "patch": "201830"
+  },
+  {
+    "name": "HOSPITAL_CAMPANHA",
+    "patch": "201830"
+  },
+  {
+    "name": "HUM",
+    "patch": "201830"
+  },
+  {
+    "name": "HUMBERTO_ALENCAR_CASTELO_BRANCO_FAMOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)HUMILDE",
+    "patch": "201830"
+  },
+  {
+    "name": "HUNGARO",
+    "patch": "201830"
+  },
+  {
+    "name": "IDADE_CONTAMPORÂNIA",
+    "patch": "201830"
+  },
+  {
+    "name": "IF",
+    "patch": "201830"
+  },
+  {
+    "name": "IMEDIATO",
+    "patch": "201830"
+  },
+  {
+    "name": "IMPLANTOUSSE",
+    "patch": "201830"
+  },
+  {
+    "name": "IMPRESSÃO_DACTILOSCÓPICA",
+    "patch": "201830"
+  },
+  {
+    "name": "IMPRESSÃO_DIGITAL",
+    "patch": "201830"
+  },
+  {
+    "name": "IMPRESSÃO_PLANTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "INDISCUTÍVEL",
+    "patch": "201830"
+  },
+  {
+    "name": "INGÁ-CIPÓ",
+    "patch": "201830"
+  },
+  {
+    "name": "INSCREVA-SE",
+    "patch": "201830"
+  },
+  {
+    "name": "INSTAVEL",
+    "patch": "201830"
+  },
+  {
+    "name": "ÍNTEGRA_SESSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "INTERATIVO",
+    "patch": "201830"
+  },
+  {
+    "name": "INTERMEDIO",
+    "patch": "201830"
+  },
+  {
+    "name": "INTERROGAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "INTOLERANCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "INVERSÃO_PAUTA",
+    "patch": "201830"
+  },
+  {
+    "name": "ISENÇÃO_FISCAL",
+    "patch": "201830"
+  },
+  {
+    "name": "ISÓTOPOS",
+    "patch": "201830"
+  },
+  {
+    "name": "JEITO_FORMATO",
+    "patch": "201830"
+  },
+  {
+    "name": "JEITO_NENHUM",
+    "patch": "201830"
+  },
+  {
+    "name": "JIU-JITSU",
+    "patch": "201830"
+  },
+  {
+    "name": "JÓQUEI_CLUBE_PASSADO",
+    "patch": "201830"
+  },
+  {
+    "name": "JORNADA_TRABALHO",
+    "patch": "201830"
+  },
+  {
+    "name": "JORNAL_CÂMARA",
+    "patch": "201830"
+  },
+  {
+    "name": "LAMPADA",
+    "patch": "201830"
+  },
+  {
+    "name": "LANÇA-PERFUME",
+    "patch": "201830"
+  },
+  {
+    "name": "LÁPIS_COR",
+    "patch": "201830"
+  },
+  {
+    "name": "LAQUEADURA_TROMPA",
+    "patch": "201830"
+  },
+  {
+    "name": "LATINO-AMERICANO",
+    "patch": "201830"
+  },
+  {
+    "name": "LAVAGEM_DINHEIRO",
+    "patch": "201830"
+  },
+  {
+    "name": "LEI_DIRETRIZ_ORÇAMENTÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "LEI_FICHA_LIMPA",
+    "patch": "201830"
+  },
+  {
+    "name": "LEILÃO_LICITAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "LEI_PATENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "LEI_RESPONSABILIDADE_FISCAL",
+    "patch": "201830"
+  },
+  {
+    "name": "LEITE_COCO",
+    "patch": "201830"
+  },
+  {
+    "name": "LEITREIRO",
+    "patch": "201830"
+  },
+  {
+    "name": "LEMBRAR_NÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "LENTE_CONTATO",
+    "patch": "201830"
+  },
+  {
+    "name": "LEÕA",
+    "patch": "201830"
+  },
+  {
+    "name": "LETRA_CÂMBIO",
+    "patch": "201830"
+  },
+  {
+    "name": "LEVANTAMENTO_SESSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "LEVEZA",
+    "patch": "201830"
+  },
+  {
+    "name": "LICENÇA_PARA_INVESTIDURA_CARGO_PÚBLICO",
+    "patch": "201830"
+  },
+  {
+    "name": "LIDERANÇA_GOVERNO",
+    "patch": "201830"
+  },
+  {
+    "name": "LIDERANÇA_PARTIDO",
+    "patch": "201830"
+  },
+  {
+    "name": "LÍDER_GOVERNO",
+    "patch": "201830"
+  },
+  {
+    "name": "LÍDER_MAIORIA",
+    "patch": "201830"
+  },
+  {
+    "name": "LÍDER_MINORIA",
+    "patch": "201830"
+  },
+  {
+    "name": "LIDER_PARTIDO",
+    "patch": "201830"
+  },
+  {
+    "name": "LÍDER_PARTIDO",
+    "patch": "201830"
+  },
+  {
+    "name": "LÍDER_PARTIDOS",
+    "patch": "201830"
+  },
+  {
+    "name": "LIGAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "LIGAÇÃO_IONICA",
+    "patch": "201830"
+  },
+  {
+    "name": "LIGAÇAO_TRIPLA",
+    "patch": "201830"
+  },
+  {
+    "name": "LIGAR_NÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "LIMITADA",
+    "patch": "201830"
+  },
+  {
+    "name": "LIMITANDO",
+    "patch": "201830"
+  },
+  {
+    "name": "LIMITE_SAQUE",
+    "patch": "201830"
+  },
+  {
+    "name": "LIQUIDAÇÃO_DESPESA",
+    "patch": "201830"
+  },
+  {
+    "name": "LIQUÍDO_(QUÍMICA)",
+    "patch": "201830"
+  },
+  {
+    "name": "LIVRO_PIADA",
+    "patch": "201830"
+  },
+  {
+    "name": "LIXÃO_CÉU_ABERTO",
+    "patch": "201830"
+  },
+  {
+    "name": "LOJA_FLOR",
+    "patch": "201830"
+  },
+  {
+    "name": "LUA-DE-MEL",
+    "patch": "201830"
+  },
+  {
+    "name": "MACACÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)MAGRO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)MAGRO",
+    "patch": "201830"
+  },
+  {
+    "name": "MANDAMENTOS",
+    "patch": "201830"
+  },
+  {
+    "name": "MANTE",
+    "patch": "201830"
+  },
+  {
+    "name": "MÁQUINA_CAÇA_NÍQUEL",
+    "patch": "201830"
+  },
+  {
+    "name": "MÁQUINA_ESCREVER",
+    "patch": "201830"
+  },
+  {
+    "name": "MÁQUINA_LAVAR_ROUPA",
+    "patch": "201830"
+  },
+  {
+    "name": "MARCA-TEXTO",
+    "patch": "201830"
+  },
+  {
+    "name": "MARGEM_APERTADA_VOTO",
+    "patch": "201830"
+  },
+  {
+    "name": "MARIA-CHIQUINHA",
+    "patch": "201830"
+  },
+  {
+    "name": "MARISQUEIRAS",
+    "patch": "201830"
+  },
+  {
+    "name": "MASSA_(QUÍMICA)",
+    "patch": "201830"
+  },
+  {
+    "name": "MATERIAL_CONSUMO",
+    "patch": "201830"
+  },
+  {
+    "name": "MATERIAL_EXPEDIENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "MATO_GROSSO_SUL",
+    "patch": "201830"
+  },
+  {
+    "name": "MAU_TRATO",
+    "patch": "201830"
+  },
+  {
+    "name": "MCDONALD'S",
+    "patch": "201830"
+  },
+  {
+    "name": "MEIA-NOITE",
+    "patch": "201830"
+  },
+  {
+    "name": "MEIO_COMUNICAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "MEIO-DIA",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)MENTIRA",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)MENTIROSO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)METIDA",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)METIDA",
+    "patch": "201830"
+  },
+  {
+    "name": "MICHEL_TEMER",
+    "patch": "201830"
+  },
+  {
+    "name": "MILITANTES",
+    "patch": "201830"
+  },
+  {
+    "name": "MINA_ÁGUA",
+    "patch": "201830"
+  },
+  {
+    "name": "MINA_MILITAR",
+    "patch": "201830"
+  },
+  {
+    "name": "MINA_MINÉRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "MINISTRO_ESTADO",
+    "patch": "201830"
+  },
+  {
+    "name": "MONTANTE_DINHEIRO",
+    "patch": "201830"
+  },
+  {
+    "name": "MOTIVO_VETO",
+    "patch": "201830"
+  },
+  {
+    "name": "MOTO-TÁXI",
+    "patch": "201830"
+  },
+  {
+    "name": "MUNIÇÃO_BALA_PARA_ARMA",
+    "patch": "201830"
+  },
+  {
+    "name": "MUNIÇÃO_FESTIM",
+    "patch": "201830"
+  },
+  {
+    "name": "NÃO_AMANHECER",
+    "patch": "201830"
+  },
+  {
+    "name": "NAO_CAGAR",
+    "patch": "201830"
+  },
+  {
+    "name": "NÃO_CONSEGUIR",
+    "patch": "201830"
+  },
+  {
+    "name": "NAO_PENSAR",
+    "patch": "201830"
+  },
+  {
+    "name": "NÃO-PERECÍVEL",
+    "patch": "201830"
+  },
+  {
+    "name": "NAO_RECLAMAR",
+    "patch": "201830"
+  },
+  {
+    "name": "NAVEGAR_PÁGINA",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)NERVOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)NERVOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "NOTA_AVALIAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "NOTA_EMPENHO",
+    "patch": "201830"
+  },
+  {
+    "name": "NOTA_LANÇAMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "OFFICE-BOY",
+    "patch": "201830"
+  },
+  {
+    "name": "OFICIAL_JUSTIÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "OFICINA_MECÂNICA",
+    "patch": "201830"
+  },
+  {
+    "name": "ÔLA",
+    "patch": "201830"
+  },
+  {
+    "name": "OLHADOA",
+    "patch": "201830"
+  },
+  {
+    "name": "ORÇAMENTO_UNIÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "ORDENADOR_DESPESA",
+    "patch": "201830"
+  },
+  {
+    "name": "ORIENTAÇÃO_BANCADA",
+    "patch": "201830"
+  },
+  {
+    "name": "OUVIDOR-GERAL",
+    "patch": "201830"
+  },
+  {
+    "name": "ÔXIDO_ÁCIDO",
+    "patch": "201830"
+  },
+  {
+    "name": "PAGAR_ME",
+    "patch": "201830"
+  },
+  {
+    "name": "PALÁCIO_CONGRESSO_NACIONAL",
+    "patch": "201830"
+  },
+  {
+    "name": "PALAVRA_ORDEM",
+    "patch": "201830"
+  },
+  {
+    "name": "PÃO_DURO",
+    "patch": "201830"
+  },
+  {
+    "name": "PAPELARIA_OFICIAL_CONGRESSO",
+    "patch": "201830"
+  },
+  {
+    "name": "PAPEL_HIGIÊNICO",
+    "patch": "201830"
+  },
+  {
+    "name": "PARABÉM",
+    "patch": "201830"
+  },
+  {
+    "name": "PARABENIZÁ",
+    "patch": "201830"
+  },
+  {
+    "name": "PARADA_ÔNIBUS",
+    "patch": "201830"
+  },
+  {
+    "name": "PARALISIA_CÉREBRO",
+    "patch": "201830"
+  },
+  {
+    "name": "PARA-SOL",
+    "patch": "201830"
+  },
+  {
+    "name": "PARECER_COMISSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "PARECER_MÉRITO",
+    "patch": "201830"
+  },
+  {
+    "name": "PARQUE_DIVERSÕES",
+    "patch": "201830"
+  },
+  {
+    "name": "PASSAGEM_PEDESTRE",
+    "patch": "201830"
+  },
+  {
+    "name": "PASSAR_LIVRE",
+    "patch": "201830"
+  },
+  {
+    "name": "PASTA_MEU_DOCUMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "PATATIVA_PASSADO_ASSARÉ",
+    "patch": "201830"
+  },
+  {
+    "name": "PATIM",
+    "patch": "201830"
+  },
+  {
+    "name": "PATO_TUCUPÍ",
+    "patch": "201830"
+  },
+  {
+    "name": "PATRIMÔNIO_LIQUIDO",
+    "patch": "201830"
+  },
+  {
+    "name": "PEDIDO_VISTA",
+    "patch": "201830"
+  },
+  {
+    "name": "PEN-DRIVE",
+    "patch": "201830"
+  },
+  {
+    "name": "PÉ_PATO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)PEQUENO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)PEQUENO",
+    "patch": "201830"
+  },
+  {
+    "name": "PERCORRER",
+    "patch": "201830"
+  },
+  {
+    "name": "PERÍODO_E_FASE_DA_MISTURA",
+    "patch": "201830"
+  },
+  {
+    "name": "PERTENCER-ME",
+    "patch": "201830"
+  },
+  {
+    "name": "PERTENCER-NOS",
+    "patch": "201830"
+  },
+  {
+    "name": "PESQUISA_BOCA_URNA",
+    "patch": "201830"
+  },
+  {
+    "name": "PESSOA_ANIVERSÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "PESSOA_APARECER",
+    "patch": "201830"
+  },
+  {
+    "name": "PICA-PAU",
+    "patch": "201830"
+  },
+  {
+    "name": "PIMENTA-DO-REINO",
+    "patch": "201830"
+  },
+  {
+    "name": "PLAGIO",
+    "patch": "201830"
+  },
+  {
+    "name": "POLICIA",
+    "patch": "201830"
+  },
+  {
+    "name": "POLO_CONFECÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "PONTE_DE_HIDROGENIO",
+    "patch": "201830"
+  },
+  {
+    "name": "PONTO",
+    "patch": "201830"
+  },
+  {
+    "name": "PORCO-ESPINHO",
+    "patch": "201830"
+  },
+  {
+    "name": "PÔR_SOL",
+    "patch": "201830"
+  },
+  {
+    "name": "PORTA-COPOS",
+    "patch": "201830"
+  },
+  {
+    "name": "PORTA-MALAS",
+    "patch": "201830"
+  },
+  {
+    "name": "PORTA-RETRATO",
+    "patch": "201830"
+  },
+  {
+    "name": "PORTE",
+    "patch": "201830"
+  },
+  {
+    "name": "PORTE_ARMA",
+    "patch": "201830"
+  },
+  {
+    "name": "PÓS-DOUTORADO",
+    "patch": "201830"
+  },
+  {
+    "name": "PÓS-GRADUAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "PÓSSAMOS",
+    "patch": "201830"
+  },
+  {
+    "name": "POSSE_CARGO",
+    "patch": "201830"
+  },
+  {
+    "name": "POSTO_GASOLINA",
+    "patch": "201830"
+  },
+  {
+    "name": "POSTO_SAÚDE",
+    "patch": "201830"
+  },
+  {
+    "name": "PRÉ-ESCOLA",
+    "patch": "201830"
+  },
+  {
+    "name": "PREFESSORES",
+    "patch": "201830"
+  },
+  {
+    "name": "PREGIÇOSO",
+    "patch": "201830"
+  },
+  {
+    "name": "PRESIDENTE_CÂMARA",
+    "patch": "201830"
+  },
+  {
+    "name": "PRESIDENTE_COMISSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "PRESIDENTE_REPÚBLICA",
+    "patch": "201830"
+  },
+  {
+    "name": "PRESIDENTE_SESSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "PRESSÃO_PARCIAL",
+    "patch": "201830"
+  },
+  {
+    "name": "PRESTAÇÃO_CONTA",
+    "patch": "201830"
+  },
+  {
+    "name": "PRIMEIRA-SECRETÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "PRIMEIRA-VICE-PRESIDENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "PRIMEIRO-SECRETÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "PRIMEIRO-VICE-PRESIDENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "PRINCÍPIO_IMPESSOALIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "PRINCÍPIO_MORALIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "PRINCÍPIO_PROPORCIONALIDADE_PARTIDÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "PRINCÍPIO_PUBLICIDADE",
+    "patch": "201830"
+  },
+  {
+    "name": "PRIVILÉGIA",
+    "patch": "201830"
+  },
+  {
+    "name": "PROCLAMAS_CASAMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "PRO_CONTRA",
+    "patch": "201830"
+  },
+  {
+    "name": "PROJETIL",
+    "patch": "201830"
+  },
+  {
+    "name": "PROJETO_CÓDIGO",
+    "patch": "201830"
+  },
+  {
+    "name": "PROJETO_EXECUTIVO",
+    "patch": "201830"
+  },
+  {
+    "name": "PROJETO_LEI_COMPLEMENTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "PROJETO_LEI_ORDINÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "PROJETO_RESOLUÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "PROJETOR_SLIDE",
+    "patch": "201830"
+  },
+  {
+    "name": "PROPAGANDA_BOCA_URNA",
+    "patch": "201830"
+  },
+  {
+    "name": "PROPORCIONALIDADE_IMPOSTO",
+    "patch": "201830"
+  },
+  {
+    "name": "PROPOSIÇÃO_RECORRER",
+    "patch": "201830"
+  },
+  {
+    "name": "PROPOSTA_EMENDA_À_CONSTITUIÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "PROPOSTA_FISCALIZAÇÃO_CONTROLE",
+    "patch": "201830"
+  },
+  {
+    "name": "PROTON",
+    "patch": "201830"
+  },
+  {
+    "name": "PUXADOR_VOTO",
+    "patch": "201830"
+  },
+  {
+    "name": "QUADRO_DETALHAMENTO_EMPRESA",
+    "patch": "201830"
+  },
+  {
+    "name": "QUARTA-SECRETÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "QUARTAS_FINAL",
+    "patch": "201830"
+  },
+  {
+    "name": "QUARTO_PLENÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "QUARTO-SECRETÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "QUEBRA-CABEÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "QUEBRA-MOLA",
+    "patch": "201830"
+  },
+  {
+    "name": "QUEBRA-MOLAS",
+    "patch": "201830"
+  },
+  {
+    "name": "QUEBRA-QUEIXO",
+    "patch": "201830"
+  },
+  {
+    "name": "QUEDA-D'ÁGUA",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)QUENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)QUENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "QUERER_NÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "QUESTÃO_GÊNERO",
+    "patch": "201830"
+  },
+  {
+    "name": "QUESTÃO_ORDEM",
+    "patch": "201830"
+  },
+  {
+    "name": "QUÓRUM_ABERTURA_SESSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "QUÓRUM_APROVAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "QUÓRUM_DELIBERAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "R$",
+    "patch": "201830"
+  },
+  {
+    "name": "RAIO_ATOMICO",
+    "patch": "201830"
+  },
+  {
+    "name": "RASTEJAR",
+    "patch": "201830"
+  },
+  {
+    "name": "REAÇÃO_DE_DULPA-TROCA",
+    "patch": "201830"
+  },
+  {
+    "name": "REAÇÃO_DE_SIMPLES_TROCA_E_REAÇÃO_DE_DESLOCALMENTO",
+    "patch": "201830"
+  },
+  {
+    "name": "REAÇÃO_QUÍMICA_E_TRANSFORMAÇÃO_QUÍMICA",
+    "patch": "201830"
+  },
+  {
+    "name": "RECADO",
+    "patch": "201830"
+  },
+  {
+    "name": "RECEITA",
+    "patch": "201830"
+  },
+  {
+    "name": "RECEITA_FONTE",
+    "patch": "201830"
+  },
+  {
+    "name": "RECEITA_TRANSFERÊNCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "RECÉM-NASCIDO",
+    "patch": "201830"
+  },
+  {
+    "name": "RECURSO_EXTRAORÇAMENTÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "RECURSO_PROCESSUAL",
+    "patch": "201830"
+  },
+  {
+    "name": "RECURSO_PÚBLICO",
+    "patch": "201830"
+  },
+  {
+    "name": "REDES",
+    "patch": "201830"
+  },
+  {
+    "name": "REFERÊNCIAR",
+    "patch": "201830"
+  },
+  {
+    "name": "REGIMENTO_COMUM_CONGRESSO_NACIONAL",
+    "patch": "201830"
+  },
+  {
+    "name": "REGISTRO_VOTO",
+    "patch": "201830"
+  },
+  {
+    "name": "REGRA_MERCADO",
+    "patch": "201830"
+  },
+  {
+    "name": "RELAÇÃO_MUDANÇA_TRANSFORMAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "RELAXAMENTO_PRISÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "RELÓGIO_PAREDE",
+    "patch": "201830"
+  },
+  {
+    "name": "REMIÇÃO_PENA",
+    "patch": "201830"
+  },
+  {
+    "name": "RENDA_PER_CAPTA",
+    "patch": "201830"
+  },
+  {
+    "name": "RENDIÇÃO_GUERRA",
+    "patch": "201830"
+  },
+  {
+    "name": "REPARAÇÃO_DANO_JURÍDICO",
+    "patch": "201830"
+  },
+  {
+    "name": "RESTAURAR_COMPUTAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "REUNIÃO_COMISSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "RÉU_REVEL",
+    "patch": "201830"
+  },
+  {
+    "name": "RIO_GRANDE_SUL",
+    "patch": "201830"
+  },
+  {
+    "name": "RIO_JANEIRO",
+    "patch": "201830"
+  },
+  {
+    "name": "RODÍZIO_CARRO",
+    "patch": "201830"
+  },
+  {
+    "name": "ROLO_MACARRÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "SACA-ROLHAS",
+    "patch": "201830"
+  },
+  {
+    "name": "SALADA_FRUTA",
+    "patch": "201830"
+  },
+  {
+    "name": "SALA_DESEMBRAQUE",
+    "patch": "201830"
+  },
+  {
+    "name": "SALA_EMBARQUE",
+    "patch": "201830"
+  },
+  {
+    "name": "SALA_JANTAR",
+    "patch": "201830"
+  },
+  {
+    "name": "SALÃO_FESTA",
+    "patch": "201830"
+  },
+  {
+    "name": "SALÁRIO_MILITAR",
+    "patch": "201830"
+  },
+  {
+    "name": "SALA_TV",
+    "patch": "201830"
+  },
+  {
+    "name": "SALA_VISITA",
+    "patch": "201830"
+  },
+  {
+    "name": "SALVA-VIDAS",
+    "patch": "201830"
+  },
+  {
+    "name": "SANDÁLIA_DEDO",
+    "patch": "201830"
+  },
+  {
+    "name": "SANTINHO_ELEITORAL",
+    "patch": "201830"
+  },
+  {
+    "name": "SAPATO_SALTO",
+    "patch": "201830"
+  },
+  {
+    "name": "SECADOR_CABELO",
+    "patch": "201830"
+  },
+  {
+    "name": "SECRETARIA_COMUNICAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "SECRETÁRIO-GERAL_MESA",
+    "patch": "201830"
+  },
+  {
+    "name": "SEGUNDA-SECRETÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "SEGUNDA-VICE-PRESIDENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "SEGUNDO-SECRETÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "SEGUNDO-VICE-PRESIDENTE",
+    "patch": "201830"
+  },
+  {
+    "name": "SESSÃO_ABERTURA",
+    "patch": "201830"
+  },
+  {
+    "name": "SESSÃO_CONGRESSO_NACIONAL",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)SEVERO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)SEVERO",
+    "patch": "201830"
+  },
+  {
+    "name": "SI",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)SIMPÁTICA",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)SIMPÁTICA",
+    "patch": "201830"
+  },
+  {
+    "name": "SÍNDROME_DOWN",
+    "patch": "201830"
+  },
+  {
+    "name": "SOFÁ_MADEIRA",
+    "patch": "201830"
+  },
+  {
+    "name": "SÓLIDO_E_DURO",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)SONHAR",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)SONHAR",
+    "patch": "201830"
+  },
+  {
+    "name": "SSHHH",
+    "patch": "201830"
+  },
+  {
+    "name": "SUÉCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "SUFOCAR",
+    "patch": "201830"
+  },
+  {
+    "name": "SUJO_E_IMPURO",
+    "patch": "201830"
+  },
+  {
+    "name": "SUPER-HOMEM",
+    "patch": "201830"
+  },
+  {
+    "name": "SUPERIOR_TRIBUNAL_JUSTIÇA",
+    "patch": "201830"
+  },
+  {
+    "name": "SUPLENTE_COMISSÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "TACA",
+    "patch": "201830"
+  },
+  {
+    "name": "TAXA_CÂMBIO",
+    "patch": "201830"
+  },
+  {
+    "name": "TAXA_CONDOMÍNIO",
+    "patch": "201830"
+  },
+  {
+    "name": "TAXA_RETORNO",
+    "patch": "201830"
+  },
+  {
+    "name": "TEMP_ANDROID",
+    "patch": "201830"
+  },
+  {
+    "name": "(+)TEMPO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)TEMPO",
+    "patch": "201830"
+  },
+  {
+    "name": "TERCEIRA-SECRETÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "TERCEIRO-SECRETÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "TERMINAL_DESEMBARQUE",
+    "patch": "201830"
+  },
+  {
+    "name": "TERMINAL_EMBARQUE",
+    "patch": "201830"
+  },
+  {
+    "name": "TERMÔMETRO_E_TEMPERATURA",
+    "patch": "201830"
+  },
+  {
+    "name": "TESTA_FERRO",
+    "patch": "201830"
+  },
+  {
+    "name": "TESTAR_PEZINHO",
+    "patch": "201830"
+  },
+  {
+    "name": "TESTE_DRIVE_PASSADO",
+    "patch": "201830"
+  },
+  {
+    "name": "TESTEMUNHA_JEOVÁ",
+    "patch": "201830"
+  },
+  {
+    "name": "TICO-TICO",
+    "patch": "201830"
+  },
+  {
+    "name": "TINEA",
+    "patch": "201830"
+  },
+  {
+    "name": "TIQUETE",
+    "patch": "201830"
+  },
+  {
+    "name": "TÍTULO_ELEITOR",
+    "patch": "201830"
+  },
+  {
+    "name": "TOALHA_ROSTO",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_ATABAQUE",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_BATERIA",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_FLAUTA",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_GAITA",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_GUITARRA",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_HARPA",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_PANDEIRO",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_PIANO",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_PRATOS",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_SAX",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_TROMPETE",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_VIOLÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "TOCAR_VIOLINO",
+    "patch": "201830"
+  },
+  {
+    "name": "TOMADA_CONTA",
+    "patch": "201830"
+  },
+  {
+    "name": "TOMAR_ÁGUA",
+    "patch": "201830"
+  },
+  {
+    "name": "TOMARA_QUE_CAIR",
+    "patch": "201830"
+  },
+  {
+    "name": "TRABALHADORR",
+    "patch": "201830"
+  },
+  {
+    "name": "TRANSITADA_JULGADO",
+    "patch": "201830"
+  },
+  {
+    "name": "TRÂNSITO_JULGADO",
+    "patch": "201830"
+  },
+  {
+    "name": "TRAQUINAS",
+    "patch": "201830"
+  },
+  {
+    "name": "TRIBUNAL_CONTA_UNIÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "TUFAO",
+    "patch": "201830"
+  },
+  {
+    "name": "U$",
+    "patch": "201830"
+  },
+  {
+    "name": "UNIDADE_FEDERAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "URNA_CONTINGÊNCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "URNA_ELETRÔNICA",
+    "patch": "201830"
+  },
+  {
+    "name": "VACÃNCIA",
+    "patch": "201830"
+  },
+  {
+    "name": "VAI_VÉM",
+    "patch": "201830"
+  },
+  {
+    "name": "VÁRIA",
+    "patch": "201830"
+  },
+  {
+    "name": "VÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "VASO_SANITÁRIO",
+    "patch": "201830"
+  },
+  {
+    "name": "VENDER_ATACADO",
+    "patch": "201830"
+  },
+  {
+    "name": "VENDER_GROSSO",
+    "patch": "201830"
+  },
+  {
+    "name": "VERBA_GABINETE",
+    "patch": "201830"
+  },
+  {
+    "name": "VERBA_REPRESENTAÇÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "VEREDA",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)VERGONHA",
+    "patch": "201830"
+  },
+  {
+    "name": "VER_NÃO",
+    "patch": "201830"
+  },
+  {
+    "name": "VIRA-LATA",
+    "patch": "201830"
+  },
+  {
+    "name": "VÍRGULA",
+    "patch": "201830"
+  },
+  {
+    "name": "VOLEIBOL_PRAIA",
+    "patch": "201830"
+  },
+  {
+    "name": "VOLUME_PARA_GÁS",
+    "patch": "201830"
+  },
+  {
+    "name": "VOLUME_PARA_LÍQUIDO",
+    "patch": "201830"
+  },
+  {
+    "name": "VOTAÇÃO_BLOCO",
+    "patch": "201830"
+  },
+  {
+    "name": "VOTAÇÃO_GLOBO",
+    "patch": "201830"
+  },
+  {
+    "name": "VOTO_CABRESTO",
+    "patch": "201830"
+  },
+  {
+    "name": "VOTO_LEGENDA",
+    "patch": "201830"
+  },
+  {
+    "name": "VOTO_MINERVA",
+    "patch": "201830"
+  },
+  {
+    "name": "VOTO_TRÂNSITO",
+    "patch": "201830"
+  },
+  {
+    "name": "XEROCAR_RÁPIDO",
+    "patch": "201830"
+  },
+  {
+    "name": "(-)ZANGADO",
+    "patch": "201830"
+  }
+]
