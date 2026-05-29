@@ -3,3 +3,4 @@ flask-cors
 pysrt
 requests
 python-dotenv
+imageio-ffmpeg
