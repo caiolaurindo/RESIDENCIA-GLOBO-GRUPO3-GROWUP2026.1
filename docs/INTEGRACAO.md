@@ -17,7 +17,7 @@ Esta documentação descreve a arquitetura, o funcionamento interno e as integra
 
 # 🏗️ Visão Geral da Arquitetura
 
-O front-end (HTML/JS/CSS) atua como um orquestrador. Ele não faz o processamento pesado; em vez disso, ele se comunica com uma API Python/Node (rodando em `http://localhost:5000`) para a conversão de IA e processamento de vídeo, e com a API injetada do **VLibras** para renderização 3D da língua de sinais.
+O front-end (HTML/JS/CSS) atua como um orquestrador. Ele não faz o processamento pesado; em vez disso, ele se comunica com uma API Python/Node (rodando em `https://residencia-globo-grupo3-growup2026-1-1.onrender.com/`) para a conversão de IA e processamento de vídeo, e com a API injetada do **VLibras** para renderização 3D da língua de sinais.
 
 ## Tecnologias e APIs Envolvidas
 

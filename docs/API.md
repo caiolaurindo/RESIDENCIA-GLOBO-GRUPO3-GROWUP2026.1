@@ -2,7 +2,7 @@
 
 API REST em **Flask**, porta padrão **5000**, com **CORS** habilitado para o frontend.
 
-**Base URL:** `http://localhost:5000`
+**Base URL:** `https://residencia-globo-grupo3-growup2026-1-1.onrender.com/`
 
 ---
 
