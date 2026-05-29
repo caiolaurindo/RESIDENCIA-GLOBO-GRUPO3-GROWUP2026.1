@@ -279,7 +279,7 @@
 
             <div class="buttons">
                 <button class="btn-primary" onclick="processarSRT()">⚡ Processar SRT</button>
-                <button class="btn-libras" onclick="toggleAvatarLibras()">🤟 Abrir / Fechar VLibras</button>
+                <button class="btn-libras" onclick="abrirVLibrasEGravar()">🤟 Abrir / Fechar VLibras</button>
                 <button class="btn-success" id="btnGerar" onclick="gerarVideo()">🎬 Gerar Vídeo</button>
                 <a id="downloadBtn">⬇ Baixar MP4</a>
             </div>
@@ -316,12 +316,18 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
 
         const API_URL = 'http://localhost:5000';
+        const avatarContainer = document.getElementById('avatarContainer');
         let glossas = [];
         let recorder;
         let chunks = [];
         let timeouts = [];
+        let processandoSrt = false;
 
         function setStatus(t) { document.getElementById('status').innerText = t; }
+
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
 
         function srtToMs(time) {
             const [main, ms] = time.split(',');
@@ -330,7 +336,7 @@
         }
 
         function toggleAvatarLibras() {
-            const btn = document.querySelector('[vw-access-button]');
+            const btn = avatarContainer.querySelector('[vw-access-button]');
             if (btn) btn.click();
         }
 
@@ -357,7 +363,7 @@
         async function processarSRT() {
             try {
                 const file = document.getElementById('fileInput').files[0];
-                if (!file) { alert('Selecione um SRT'); return; }
+                if (!file) { alert('Selecione um SRT'); return false; }
                 setStatus('🧠 IA otimizando legendas...');
                 const formData = new FormData();
                 formData.append('file', file);
@@ -367,11 +373,36 @@
                 glossas = data.entries;
                 renderPreview();
                 setStatus(`✅ ${glossas.length} frases otimizadas`);
+                return true;
             } catch (err) {
                 console.error(err);
                 setStatus('❌ Erro ao processar SRT');
+                return false;
             }
         }
+
+        async function abrirVLibrasEGravar() {
+            if (glossas.length === 0) {
+                alert('Processe o SRT primeiro.');
+                return;
+            }
+            if (recorder?.state === 'recording') return;
+
+            toggleAvatarLibras();
+            await delay(1500);
+            await gerarVideo(true);
+        }
+
+        document.getElementById('fileInput').addEventListener('change', async () => {
+            const file = document.getElementById('fileInput').files[0];
+            if (!file || processandoSrt) return;
+            processandoSrt = true;
+            try {
+                await processarSRT();
+            } finally {
+                processandoSrt = false;
+            }
+        });
 
         function renderPreview() {
             const container = document.getElementById('previewList');
@@ -385,11 +416,14 @@
             });
         }
 
-        async function gerarVideo() {
+        async function gerarVideo(pularEsperaInicial = false) {
             if (glossas.length === 0) { alert('Processe o SRT primeiro.'); return; }
+            if (recorder?.state === 'recording') return;
 
-            setStatus('⏳ Aguardando VLibras carregar...');
-            await esperarVLibras();
+            if (!pularEsperaInicial) {
+                setStatus('⏳ Aguardando VLibras carregar...');
+                await esperarVLibras();
+            }
 
             const canvas = findCanvasDeep(document);
             if (!canvas) {

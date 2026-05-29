@@ -1,94 +1,203 @@
-# Conversor SRT para Libras (Video Generator)
+# Conversor SRT para Libras (GrowUp — Grupo 3)
 
-Este projeto é uma ferramenta experimental que permite converter arquivos de legenda (SRT) em vídeos de tradução em Libras. Ele utiliza o **VLibras-Plugin** para renderizar um avatar 3D no navegador, captura os movimentos via Canvas e os converte em um arquivo MP4 usando **Python** e **FFmpeg**.
+Ferramenta que converte legendas **SRT** em vídeo com avatar **VLibras**: o backend otimiza o texto com IA; o navegador sinaliza no tempo certo, grava o canvas e o servidor gera um **MP4**.
 
-## 🚀 Como Funciona
+Documentação detalhada da API: **[docs/API.md](docs/API.md)**
 
-1. **Frontend (HTML/JS):** Carrega o arquivo SRT, envia para o servidor para processamento de texto e sincroniza a sinalização do avatar do VLibras.
-2. **Backend (Flask):** Recebe o texto original, "normaliza" para o formato de glossa (removendo ruídos e pontuação) e gerencia a conversão de vídeo.
-3. **Conversão:** O navegador grava o elemento `<canvas>` em formato WebM. O servidor Python recebe esse arquivo e utiliza o FFmpeg para converter em MP4 (H.264) compatível com a maioria dos players.
+---
 
-## 🛠️ Pré-requisitos
+## Visão geral
 
-Antes de começar, você precisará ter instalado em sua máquina:
+```mermaid
+flowchart LR
+    subgraph browser [Navegador]
+        SRT[Arquivo SRT]
+        UI[frontend/index.html]
+        VL[Plugin VLibras]
+        REC[MediaRecorder WebM]
+    end
+    subgraph server [Flask :5000]
+        OPT["POST /otimizar-srt"]
+        GROQ[Groq LLM]
+        SAVE["POST /salvar-video"]
+        FF[FFmpeg]
+        MEDIA[(media/*.mp4)]
+    end
+    SRT --> UI
+    UI --> OPT
+    OPT --> GROQ
+    GROQ --> UI
+    UI --> VL
+    VL --> REC
+    REC --> SAVE
+    SAVE --> FF
+    FF --> MEDIA
+```
 
-- **Python 3.x**
-- **FFmpeg** (Essencial para a conversão de vídeo).
-  - *Dica:* Certifique-se de que o comando `ffmpeg` está acessível no seu PATH (terminal).
+Há também uma **API de validação** que checa vocabulário no banco oficial do VLibras (sem gravar vídeo). Ver [docs/API.md](docs/API.md#api-de-validação-vocabulário-vlibras).
 
-## 📥 Instalação
+---
 
-1. **Clone o repositório ou baixe os arquivos.**
-2. **Instale as dependências do Python:**
-   Abra o terminal na pasta do projeto e execute:
+## Pré-requisitos
+
+- **Python 3.10+**
+- **FFmpeg** no PATH (ou `FFMPEG_PATH` no `.env`)
+- **Chave Groq** ([console.groq.com](https://console.groq.com))
+- **Chrome ou Edge** (recomendado para `canvas.captureStream`)
+- Conexão com internet (script do VLibras em `vlibras.gov.br`)
+
+---
+
+## Instalação
 
 ```bash
+git clone <url-do-repositorio>
+cd RESIDENCIA-GLOBO-GRUPO3-GROWUP2026.1
 pip install -r requirements.txt
 ```
 
-*As dependências incluem: `flask`, `flask-cors` e `pysrt`.*
-
-## ⚡ Como Usar
-
-### 1. Inicie o Servidor Backend
-
-No terminal, execute o script do servidor:
+Copie o ambiente:
 
 ```bash
-python server.py
+cp .env.example .env
 ```
 
-O servidor ficará rodando em `http://localhost:5000`.
+Edite `.env` e defina `GROQ_API_KEY`.
 
-### 2. Abra a Interface
+---
 
-Abra o arquivo `index.html` em seu navegador (Chrome ou Edge são recomendados para melhor suporte à captura de canvas).
+## Executar
 
-### 3. Processo de Geração
+**Backend:**
 
-#### Carregar SRT
+```bash
+python run.py
+```
 
-Clique em `"📁 Carregar SRT"` e selecione seu arquivo de legenda. O status mudará para `"Legendas carregadas e prontas!"`.
+Servidor em `http://localhost:5000` (CORS liberado para o frontend).
 
-#### Aguarde o Avatar
+**Interface principal:**
 
-Espere o boneco do VLibras aparecer no canto da tela.
+Abra no navegador o arquivo [`frontend/index.html`](frontend/index.html) (duplo clique ou extensão tipo Live Server). O JS usa `API_URL = http://localhost:5000`.
 
-#### Gerar e Gravar
+> Abrir só o HTML via `file://` pode causar problemas de CORS ou do plugin VLibras. Prefira servir a pasta `frontend/` por HTTP na mesma máquina.
 
-Clique em `"⏺ Gerar e Gravar"`.
+**Interface alternativa (React):**
 
-- O sistema começará a percorrer as legendas.
-- O avatar sinalizará automaticamente conforme o tempo definido no SRT.
-- O canvas está sendo gravado em tempo real.
+```bash
+cd srt-libras
+npm install
+npm run dev
+```
 
-#### Conversão Automática
+App em `http://localhost:3000` (porta pode variar). Mesma API em `:5000`.
 
-Ao finalizar a última legenda, a gravação para e o vídeo é enviado ao servidor.
+---
 
-#### Download
+## Uso do frontend (`frontend/index.html`)
 
-Quando o status indicar `"Conversão concluída!"`, um link `"⬇ Baixar Vídeo MP4"` aparecerá.
+### Fluxo automático (padrão)
 
-## 📂 Estrutura de Arquivos
+1. Selecione um arquivo `.srt` → o sistema chama **`POST /otimizar-srt`** e mostra a prévia (original vs texto otimizado).
+2. Clique em **Abrir / Fechar VLibras** → abre o avatar e **inicia a gravação** automaticamente (se o SRT já foi processado).
+3. Ao terminar as legendas, o WebM é enviado para **`POST /salvar-video`** e aparece o link **Baixar MP4**.
 
-- `index.html`: Interface do usuário e lógica de captura de mídia.
-- `server.py`: Servidor Flask que processa glossas e executa o FFmpeg.
-- `requirements.txt`: Lista de bibliotecas Python necessárias.
-- `/media`: Pasta criada automaticamente onde os vídeos gerados são salvos com timestamp.
+### Fluxo manual
 
-## ⚠️ Observações Importantes
+- **Processar SRT** — otimiza sem depender do `change` do input.
+- **Gerar Vídeo** — grava após o VLibras estar aberto e o plugin pronto.
 
-### FFmpeg no Windows
+### Boas práticas
 
-Se o script não encontrar o FFmpeg, verifique se ele foi instalado corretamente e adicionado às variáveis de ambiente do sistema.
+- Mantenha a aba **visível e ativa** durante a gravação.
+- Aguarde o boneco do VLibras carregar antes de gravar (o fluxo automático espera ~1,5 s após abrir).
+- Arquivo de teste na raiz: `teste-avatar.srt` (5 falas, ~22 s).
 
-### Foco da Aba
+---
 
-Para garantir a gravação correta, mantenha a aba do navegador visível e ativa durante o processo de gravação.
+## Estrutura do projeto
 
-## Resumo Técnico do Repositório
+```
+├── run.py                 # Entrada: Flask na porta 5000
+├── requirements.txt
+├── .env.example
+├── frontend/
+│   └── index.html         # UI principal (SRT + VLibras + gravação)
+├── srt-libras/            # Mesma ideia em React + Vite (opcional)
+├── app/
+│   ├── __init__.py        # create_app(), blueprints, CORS
+│   ├── config.py          # MEDIA_DIR, GROQ, FFMPEG
+│   ├── routes/
+│   │   ├── srt_routes.py      # otimizar, vídeo, download
+│   │   └── validacao_routes.py # validar frase/SRT, vocabulário
+│   ├── services/
+│   │   ├── groq_service.py    # Otimização SRT (IA)
+│   │   ├── ffmpeg_service.py  # WebM → MP4
+│   │   ├── srt_service.py       # Gera SRT otimizado
+│   │   ├── vlibras_db.py      # Banco de sinais
+│   │   ├── sinonimo_service.py
+│   │   └── validacao_service.py
+│   └── utils/
+│       ├── parser.py          # Parse SRT
+│       └── timestamp.py
+├── vlibrasDataBase/       # JSONs de termos VLibras
+├── media/                 # Vídeos gerados (MP4; WebM temporário)
+├── tests/
+│   └── test_validacao.py
+└── docs/
+    └── API.md             # Referência completa da API
+```
 
-- **Backend:** Utiliza `Flask` com suporte a `CORS` para comunicação com o frontend. O método `parse_srt` extrai os tempos e textos das legendas, enquanto a função `normalizar` limpa o texto para o padrão de sinalização (Uppercase, sem ruídos como "hmm", "ah").
-- **Processamento de Vídeo:** O `subprocess.run` no Python invoca o FFmpeg com o codec `libx264` e o preset `ultrafast` para garantir agilidade na conversão.
-- **Sincronização:** No frontend, a função `playSincronizado()` utiliza `setTimeout` baseados nos milissegundos convertidos do formato SRT para acionar o comando `window.plugin.player.translate(item.glossa)`.
+---
+
+## API (resumo)
+
+| Método | Rota | Função |
+|--------|------|--------|
+| `GET` | `/` | Health check |
+| `POST` | `/otimizar-srt` | SRT → legendas otimizadas (Groq) |
+| `POST` | `/salvar-video` | WebM → MP4 em `media/` |
+| `GET` | `/download-video/<nome>` | Download do MP4 |
+| `GET` | `/videos` | Lista MP4s gerados |
+| `POST` | `/validar-frase` | Valida texto (banco + sinônimos) |
+| `POST` | `/validar-srt` | Valida SRT inteiro |
+| `GET` | `/vocab/info` | Tamanho do vocabulário |
+| `GET` | `/vocab/buscar?q=` | Busca um termo |
+
+Exemplos de request/response, códigos de erro e modelos JSON: **[docs/API.md](docs/API.md)**
+
+---
+
+## Configuração
+
+| Variável | Descrição |
+|----------|-----------|
+| `GROQ_API_KEY` | Obrigatória para `/otimizar-srt` e sinônimos na validação |
+| `FFMPEG_PATH` | Opcional; padrão `ffmpeg` |
+
+Vídeos finais: pasta **`media/`**, nome `libras_YYYYMMDD_HHMMSS.mp4`.
+
+---
+
+## Tecnologias
+
+- **Backend:** Flask, flask-cors, requests, python-dotenv
+- **IA:** Groq API (`llama-3.3-70b-versatile`)
+- **Vídeo:** FFmpeg (libx264, 1920×1080)
+- **Frontend:** HTML/JS + [VLibras Widget](https://www.vlibras.gov.br/)
+- **Validação:** JSONs `signspatch201830/31.json`
+
+---
+
+## Limitações conhecidas
+
+- A otimização por IA **não garante** que todo termo exista no VLibras (a API `/validar-*` existe para isso, mas não está ligada ao `index.html`).
+- A gravação depende do canvas do plugin; falhas de rede no `vlibras.gov.br` impedem o avatar.
+- Apenas legendas em **UTF-8** são suportadas no upload.
+
+---
+
+## Licença e créditos
+
+Projeto acadêmico — Residência Globo / GrowUp 2026.  
+VLibras: Governo Federal ([vlibras.gov.br](https://www.vlibras.gov.br)).
