@@ -3,4 +3,4 @@ services:
   name: conversao-api
   env: python
   bluidCommand: pip install -r requirements.txt
-  startCommand: gunicorn app:app
+  startCommand: gunicorn run:app
