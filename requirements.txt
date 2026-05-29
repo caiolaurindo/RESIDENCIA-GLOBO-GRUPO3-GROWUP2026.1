@@ -4,3 +4,4 @@ pysrt
 requests
 python-dotenv
 imageio-ffmpeg
+gunicorn
