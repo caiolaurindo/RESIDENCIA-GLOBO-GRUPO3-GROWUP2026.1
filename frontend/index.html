@@ -1,13 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Conversor SRT → Libras IA</title>
-
     <style>
         * {
             margin: 0;
@@ -121,7 +118,6 @@
             animation: pulse-recording 1s infinite;
         }
 
-        /* AREA DE TRABALHO LADO A LADO */
         .workspace-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -135,12 +131,12 @@
             }
         }
 
-        /* COLUNA DA LEGENDA COM ALTURA FIXA E SCROLL */
+        /* Coluna da legenda */
         .preview {
             background: #0b1220;
             border-radius: 16px;
             padding: 20px;
-            height: 520px;
+            height: 620px;
             display: flex;
             flex-direction: column;
         }
@@ -156,14 +152,15 @@
             padding-right: 10px;
         }
 
-        /* Customização da barra de rolagem interna */
         #previewList::-webkit-scrollbar {
             width: 6px;
         }
+
         #previewList::-webkit-scrollbar-track {
             background: #1e293b;
             border-radius: 10px;
         }
+
         #previewList::-webkit-scrollbar-thumb {
             background: #475569;
             border-radius: 10px;
@@ -188,20 +185,21 @@
             font-weight: bold;
         }
 
-        /* COLUNA DO AVATAR - AJUSTADA PARA NÃO CORTAR O BONECO */
+        /* ============================================================
+           CONTAINER DO VLIBRAS — CORRIGIDO
+           Cria um novo contexto de empilhamento sem clipar o conteúdo
+           internos que usam position: fixed.
+           ============================================================ */
         .vlibras-embed-container {
             background: #0b1220;
             border-radius: 16px;
-            padding: 0;
             height: 520px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
             border: 2px solid #1e293b;
             position: relative;
-            overflow: hidden;
             transition: border-color 0.3s;
+            /* Cria novo stacking context para position: fixed interno */
+            transform: translateZ(0);
+            contain: layout style;
         }
 
         .vlibras-embed-container.is-recording {
@@ -209,42 +207,38 @@
             box-shadow: 0 0 15px rgba(220, 38, 38, 0.3);
         }
 
-        /* Reset completo das propriedades absolutas e do topo do widget governamental */
-        .vlibras-embed-container div[vw] {
-            position: relative !important;
-            left: auto !important;
-            top: -40px !important; /* Move sutilmente para cima para compensar a barra de controles e focar no boneco */
-            right: auto !important;
-            bottom: auto !important;
-            display: block !important;
-            width: 100% !important;
-            height: 120% !important; /* Ganho de área útil vertical interna */
-            z-index: 10 !important;
-        }
-
-        .vlibras-embed-container [vw-plugin-wrapper] {
-            position: relative !important;
+        /* Deixa o div raiz do widget preencher todo o container */
+        .vlibras-embed-container>div[vw] {
+            position: absolute !important;
+            inset: 0 !important;
             width: 100% !important;
             height: 100% !important;
+            overflow: visible !important;
             top: auto !important;
-            left: auto !important;
-            right: auto !important;
-            bottom: auto !important;
+        }   
+
+        /* Wrapper interno também preenche tudo */
+        [vw-plugin-wrapper] {
+            position: absolute !important;
+            inset: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
             box-shadow: none !important;
             background: transparent !important;
+            overflow: visible !important;
         }
 
-        /* Força centralização dos seletores internos injetados dinamicamente */
-        .vlibras-embed-container [vw-plugin-wrapper] vp-box,
-        .vlibras-embed-container [vw-plugin-wrapper] .vw-plugin-top-wrapper {
-            position: relative !important;
-            top: auto !important;
-            left: auto !important;
-            margin: 0 auto !important;
-            max-width: 100% !important;
+        /* Wrapper superior do plugin */
+        .vw-plugin-top-wrapper {
+            position: absolute !important;
+            inset: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            overflow: visible !important;
         }
 
-        .vlibras-embed-container [vw-access-button] {
+        /* Esconde o botão flutuante padrão — usamos nosso próprio botão */
+        [vw-access-button] {
             display: none !important;
         }
 
@@ -273,39 +267,21 @@
 <body>
 
     <div class="container">
-
         <div class="card">
 
             <h1>🤟 Conversor SRT → Libras IA</h1>
-
-            <p class="subtitle">
-                Otimização automática de legendas para o VLibras usando IA.
-            </p>
+            <p class="subtitle">Otimização automática de legendas para o VLibras usando IA.</p>
 
             <div class="upload-box">
-
                 <h2>📄 Selecione o arquivo SRT</h2>
-
                 <input type="file" id="fileInput" accept=".srt">
             </div>
 
             <div class="buttons">
-
-                <button class="btn-primary" onclick="processarSRT()">
-                    ⚡ Processar SRT
-                </button>
-
-                <button class="btn-libras" onclick="toggleAvatarLibras()">
-                    🤟 Abrir / Fechar VLibras
-                </button>
-
-                <button class="btn-success" id="btnGerar" onclick="gerarVideo()">
-                    🎬 Gerar Vídeo
-                </button>
-
-                <a id="downloadBtn">
-                    ⬇ Baixar MP4
-                </a>
+                <button class="btn-primary" onclick="processarSRT()">⚡ Processar SRT</button>
+                <button class="btn-libras" onclick="toggleAvatarLibras()">🤟 Abrir / Fechar VLibras</button>
+                <button class="btn-success" id="btnGerar" onclick="gerarVideo()">🎬 Gerar Vídeo</button>
+                <a id="downloadBtn">⬇ Baixar MP4</a>
             </div>
 
             <div class="status-container">
@@ -314,17 +290,14 @@
             </div>
 
             <div class="workspace-grid">
-                
+
                 <div class="preview">
                     <h3>🧠 Prévia da IA</h3>
                     <div id="previewList"></div>
                 </div>
 
+                <!-- Container do avatar -->
                 <div class="vlibras-embed-container" id="avatarContainer">
-                    <div id="librasPlaceholder" style="color: #64748b; text-align: center; position: absolute; padding: 20px; top: 45%;">
-                        Janela do VLibras fechada.<br>Clique no botão roxo para carregar o avatar.
-                    </div>
-
                     <div vw class="enabled">
                         <div vw-access-button class="active"></div>
                         <div vw-plugin-wrapper>
@@ -334,43 +307,13 @@
                 </div>
 
             </div>
-
         </div>
     </div>
 
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-
     <script>
 
-        // =========================================
-        // VLIBRAS
-        // =========================================
-
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-
-        function toggleAvatarLibras() {
-            const placeholder = document.getElementById('librasPlaceholder');
-            
-            if (window.plugin && window.plugin.player) {
-                if (window.plugin.player.isOpen) {
-                    window.plugin.player.close();
-                    placeholder.style.display = 'block';
-                } else {
-                    window.plugin.player.open();
-                    placeholder.style.display = 'none';
-                }
-            } else {
-                const nativeBtn = document.querySelector('[vw-access-button]');
-                if (nativeBtn) {
-                    nativeBtn.click();
-                    placeholder.style.display = 'none';
-                }
-            }
-        }
-
-        // =========================================
-        // CONFIG
-        // =========================================
 
         const API_URL = 'http://localhost:5000';
         let glossas = [];
@@ -378,50 +321,52 @@
         let chunks = [];
         let timeouts = [];
 
-        function setStatus(texto) {
-            document.getElementById('status').innerText = texto;
-        }
+        function setStatus(t) { document.getElementById('status').innerText = t; }
 
         function srtToMs(time) {
             const [main, ms] = time.split(',');
             const [h, m, s] = main.split(':');
-            return (
-                parseInt(h) * 3600000 +
-                parseInt(m) * 60000 +
-                parseInt(s) * 1000 +
-                parseInt(ms)
-            );
+            return parseInt(h) * 3600000 + parseInt(m) * 60000 + parseInt(s) * 1000 + parseInt(ms);
         }
 
-        // =========================================
-        // PROCESSAR SRT
-        // =========================================
+        function toggleAvatarLibras() {
+            const btn = document.querySelector('[vw-access-button]');
+            if (btn) btn.click();
+        }
+
+        function esperarVLibras() {
+            return new Promise(resolve => {
+                const iv = setInterval(() => {
+                    if (window.plugin?.player?.translate) { clearInterval(iv); resolve(); }
+                }, 500);
+            });
+        }
+
+        function findCanvasDeep(root) {
+            const direct = root.querySelector('canvas');
+            if (direct) return direct;
+            for (const el of root.querySelectorAll('*')) {
+                if (el.shadowRoot) {
+                    const found = findCanvasDeep(el.shadowRoot);
+                    if (found) return found;
+                }
+            }
+            return null;
+        }
 
         async function processarSRT() {
             try {
                 const file = document.getElementById('fileInput').files[0];
-                if (!file) {
-                    alert('Selecione um SRT');
-                    return;
-                }
-
+                if (!file) { alert('Selecione um SRT'); return; }
                 setStatus('🧠 IA otimizando legendas...');
-
                 const formData = new FormData();
                 formData.append('file', file);
-
-                const response = await fetch(`${API_URL}/otimizar-srt`, {
-                    method: 'POST',
-                    body: formData
-                });
-
+                const response = await fetch(`${API_URL}/otimizar-srt`, { method: 'POST', body: formData });
                 const data = await response.json();
                 if (!data.success) throw new Error(data.error);
-
                 glossas = data.entries;
                 renderPreview();
                 setStatus(`✅ ${glossas.length} frases otimizadas`);
-
             } catch (err) {
                 console.error(err);
                 setStatus('❌ Erro ao processar SRT');
@@ -431,63 +376,25 @@
         function renderPreview() {
             const container = document.getElementById('previewList');
             container.innerHTML = '';
-
             glossas.forEach(item => {
                 const div = document.createElement('div');
                 div.className = 'preview-item';
-                div.innerHTML = `
-                    <div class="original">${item.texto_original}</div>
-                    <div class="optimized">🤟 ${item.texto_otimizado}</div>
-                `;
+                div.innerHTML = `<div class="original">${item.texto_original}</div>
+                         <div class="optimized">🤟 ${item.texto_otimizado}</div>`;
                 container.appendChild(div);
             });
         }
 
-        function esperarVLibras() {
-            return new Promise(resolve => {
-                const interval = setInterval(() => {
-                    if (
-                        window.plugin &&
-                        window.plugin.player &&
-                        typeof window.plugin.player.translate === 'function'
-                    ) {
-                        clearInterval(interval);
-                        resolve();
-                    }
-                }, 1000);
-            });
-        }
-
-        // =========================================
-        // GERAR VÍDEO COM TRADUÇÃO RETOMADA
-        // =========================================
-
         async function gerarVideo() {
-            if (glossas.length === 0) {
-                alert('Processe o SRT primeiro.');
-                return;
-            }
+            if (glossas.length === 0) { alert('Processe o SRT primeiro.'); return; }
 
-            // Força a abertura do player caso esteja fechado
-            if (window.plugin && window.plugin.player && !window.plugin.player.isOpen) {
-                toggleAvatarLibras();
-            }
-
+            setStatus('⏳ Aguardando VLibras carregar...');
             await esperarVLibras();
 
-            // Mapeamento do canvas dentro da árvore oculta ou visível
-            let canvas = null;
-            const screenPlayer = document.querySelector('div[vw-plugin-wrapper] viewBox screen-player');
-            if (screenPlayer && screenPlayer.shadowRoot) {
-                canvas = screenPlayer.shadowRoot.querySelector('canvas');
-            }
-            
+            const canvas = findCanvasDeep(document);
             if (!canvas) {
-                canvas = document.querySelector('.vlibras-embed-container canvas') || document.querySelector('canvas');
-            }
-
-            if (!canvas) {
-                alert('Não foi possível encontrar a janela de renderização 3D do player.');
+                alert('Canvas 3D do VLibras não encontrado.\nAbra o avatar com o botão roxo e tente novamente.');
+                setStatus('❌ Canvas não encontrado');
                 return;
             }
 
@@ -495,83 +402,56 @@
             timeouts.forEach(clearTimeout);
             timeouts = [];
 
-            // Inicia o fluxo de gravação do canvas (30 FPS)
-            const stream = canvas.captureStream(30);
-            recorder = new MediaRecorder(stream, { mimeType: 'video/webm' });
+            let stream;
+            try { stream = canvas.captureStream(30); }
+            catch (e) { setStatus('❌ captureStream não suportado'); return; }
 
-            recorder.ondataavailable = e => {
-                if (e.data.size > 0) chunks.push(e.data);
-            };
+            const mimeType = ['video/webm;codecs=vp9', 'video/webm;codecs=vp8', 'video/webm']
+                .find(m => MediaRecorder.isTypeSupported(m)) || 'video/webm';
 
+            recorder = new MediaRecorder(stream, { mimeType });
+            recorder.ondataavailable = e => { if (e.data?.size > 0) chunks.push(e.data); };
             recorder.onstop = enviarVideo;
-            recorder.start();
+            recorder.start(100);
 
-            // Ativa sinalizadores visuais na interface
             document.getElementById('btnGerar').classList.add('recording');
             document.getElementById('avatarContainer').classList.add('is-recording');
             document.getElementById('recordBadge').style.display = 'block';
-
             setStatus('🎥 Gravando avatar VLibras...');
 
-            // Lógica de sincronização cronometrada dos gestos
             glossas.forEach(item => {
-                const delay = srtToMs(item.start);
-                const timeout = setTimeout(() => {
-                    if (window.plugin && window.plugin.player && typeof window.plugin.player.translate === 'function') {
-                        // Passa a glossa otimizada para o motor de animação do VLibras
-                        window.plugin.player.translate(item.texto_otimizado);
-                    }
-                }, delay);
-                timeouts.push(timeout);
+                const t = setTimeout(() => {
+                    window.plugin?.player?.translate(item.texto_otimizado);
+                }, srtToMs(item.start));
+                timeouts.push(t);
             });
 
-            // Determina a finalização da gravação somando 3 segundos à última legenda
-            const ultimo = glossas[glossas.length - 1];
-            const total = srtToMs(ultimo.end) + 3000; 
-
-            setTimeout(() => {
-                pararGravacao();
-            }, total);
+            const total = srtToMs(glossas[glossas.length - 1].end) + 3000;
+            timeouts.push(setTimeout(pararGravacao, total));
         }
 
         function pararGravacao() {
-            if (recorder && recorder.state === 'recording') {
+            if (recorder?.state === 'recording') {
                 recorder.stop();
-                
                 document.getElementById('btnGerar').classList.remove('recording');
                 document.getElementById('avatarContainer').classList.remove('is-recording');
                 document.getElementById('recordBadge').style.display = 'none';
             }
         }
 
-        // =========================================
-        // ENVIO DO BUFFER DE VÍDEO
-        // =========================================
-
         async function enviarVideo() {
             try {
                 setStatus('⚡ Convertendo vídeo Full HD...');
-
                 const blob = new Blob(chunks, { type: 'video/webm' });
                 const formData = new FormData();
                 formData.append('video', blob, 'libras.webm');
-
-                const response = await fetch(`${API_URL}/salvar-video`, {
-                    method: 'POST',
-                    body: formData
-                });
-
+                const response = await fetch(`${API_URL}/salvar-video`, { method: 'POST', body: formData });
                 const data = await response.json();
                 if (!data.success) throw new Error(data.error);
-
                 setStatus('✅ Vídeo salvo em /media');
-
                 const downloadBtn = document.getElementById('downloadBtn');
-                const nomeArquivo = data.video_mp4.split('\\').pop();
-
-                downloadBtn.href = `${API_URL}/media/${nomeArquivo}`;
+                downloadBtn.href = `${API_URL}/media/${data.video_mp4.split('\\').pop()}`;
                 downloadBtn.style.display = 'inline-block';
-
             } catch (err) {
                 console.error(err);
                 setStatus('❌ Erro ao salvar vídeo');
@@ -579,4 +459,5 @@
         }
     </script>
 </body>
+
 </html>
