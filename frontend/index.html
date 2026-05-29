@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -89,29 +90,83 @@
             color: white;
         }
 
-        .btn-danger {
-            background: #dc2626;
+        .btn-libras {
+            background: #7c3aed;
             color: white;
         }
 
-        .status {
+        .status-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background: #0b1220;
             padding: 16px;
             border-radius: 12px;
             margin-bottom: 25px;
+        }
+
+        .status {
             color: #cbd5e1;
             font-size: 15px;
         }
 
+        .recording-badge {
+            display: none;
+            background: #dc2626;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            animation: pulse-recording 1s infinite;
+        }
+
+        /* AREA DE TRABALHO LADO A LADO */
+        .workspace-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .workspace-grid {
+                grid-template-columns: 1.5fr 1fr;
+            }
+        }
+
+        /* COLUNA DA LEGENDA COM ALTURA FIXA E SCROLL */
         .preview {
             background: #0b1220;
             border-radius: 16px;
             padding: 20px;
-            margin-top: 20px;
+            height: 520px;
+            display: flex;
+            flex-direction: column;
         }
 
         .preview h3 {
             margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+
+        #previewList {
+            overflow-y: auto;
+            flex-grow: 1;
+            padding-right: 10px;
+        }
+
+        /* Customização da barra de rolagem interna */
+        #previewList::-webkit-scrollbar {
+            width: 6px;
+        }
+        #previewList::-webkit-scrollbar-track {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+        #previewList::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 10px;
         }
 
         .preview-item {
@@ -133,6 +188,66 @@
             font-weight: bold;
         }
 
+        /* COLUNA DO AVATAR - AJUSTADA PARA NÃO CORTAR O BONECO */
+        .vlibras-embed-container {
+            background: #0b1220;
+            border-radius: 16px;
+            padding: 0;
+            height: 520px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            border: 2px solid #1e293b;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s;
+        }
+
+        .vlibras-embed-container.is-recording {
+            border-color: #dc2626 !important;
+            box-shadow: 0 0 15px rgba(220, 38, 38, 0.3);
+        }
+
+        /* Reset completo das propriedades absolutas e do topo do widget governamental */
+        .vlibras-embed-container div[vw] {
+            position: relative !important;
+            left: auto !important;
+            top: -40px !important; /* Move sutilmente para cima para compensar a barra de controles e focar no boneco */
+            right: auto !important;
+            bottom: auto !important;
+            display: block !important;
+            width: 100% !important;
+            height: 120% !important; /* Ganho de área útil vertical interna */
+            z-index: 10 !important;
+        }
+
+        .vlibras-embed-container [vw-plugin-wrapper] {
+            position: relative !important;
+            width: 100% !important;
+            height: 100% !important;
+            top: auto !important;
+            left: auto !important;
+            right: auto !important;
+            bottom: auto !important;
+            box-shadow: none !important;
+            background: transparent !important;
+        }
+
+        /* Força centralização dos seletores internos injetados dinamicamente */
+        .vlibras-embed-container [vw-plugin-wrapper] vp-box,
+        .vlibras-embed-container [vw-plugin-wrapper] .vw-plugin-top-wrapper {
+            position: relative !important;
+            top: auto !important;
+            left: auto !important;
+            margin: 0 auto !important;
+            max-width: 100% !important;
+        }
+
+        .vlibras-embed-container [vw-access-button] {
+            display: none !important;
+        }
+
         #downloadBtn {
             display: none;
             text-decoration: none;
@@ -143,11 +258,11 @@
             font-weight: bold;
         }
 
-        .recording {
-            animation: pulse 1s infinite;
+        .btn-success.recording {
+            background: #dc2626 !important;
         }
 
-        @keyframes pulse {
+        @keyframes pulse-recording {
             50% {
                 opacity: 0.5;
             }
@@ -171,27 +286,20 @@
 
                 <h2>📄 Selecione o arquivo SRT</h2>
 
-                <input
-                    type="file"
-                    id="fileInput"
-                    accept=".srt"
-                >
+                <input type="file" id="fileInput" accept=".srt">
             </div>
 
             <div class="buttons">
 
-                <button
-                    class="btn-primary"
-                    onclick="processarSRT()"
-                >
+                <button class="btn-primary" onclick="processarSRT()">
                     ⚡ Processar SRT
                 </button>
 
-                <button
-                    class="btn-success"
-                    id="btnGerar"
-                    onclick="gerarVideo()"
-                >
+                <button class="btn-libras" onclick="toggleAvatarLibras()">
+                    🤟 Abrir / Fechar VLibras
+                </button>
+
+                <button class="btn-success" id="btnGerar" onclick="gerarVideo()">
                     🎬 Gerar Vídeo
                 </button>
 
@@ -200,26 +308,33 @@
                 </a>
             </div>
 
-            <div class="status" id="status">
-                Aguardando arquivo...
+            <div class="status-container">
+                <div class="status" id="status">Aguardando arquivo...</div>
+                <div class="recording-badge" id="recordBadge">🔴 GRAVANDO AVATAR</div>
             </div>
 
-            <div class="preview">
+            <div class="workspace-grid">
+                
+                <div class="preview">
+                    <h3>🧠 Prévia da IA</h3>
+                    <div id="previewList"></div>
+                </div>
 
-                <h3>🧠 Prévia da IA</h3>
+                <div class="vlibras-embed-container" id="avatarContainer">
+                    <div id="librasPlaceholder" style="color: #64748b; text-align: center; position: absolute; padding: 20px; top: 45%;">
+                        Janela do VLibras fechada.<br>Clique no botão roxo para carregar o avatar.
+                    </div>
 
-                <div id="previewList"></div>
+                    <div vw class="enabled">
+                        <div vw-access-button class="active"></div>
+                        <div vw-plugin-wrapper>
+                            <div class="vw-plugin-top-wrapper"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </div>
 
-    <!-- VLIBRAS -->
-
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
 
@@ -231,45 +346,45 @@
         // VLIBRAS
         // =========================================
 
-        new window.VLibras.Widget(
-            'https://vlibras.gov.br/app'
-        );
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+        function toggleAvatarLibras() {
+            const placeholder = document.getElementById('librasPlaceholder');
+            
+            if (window.plugin && window.plugin.player) {
+                if (window.plugin.player.isOpen) {
+                    window.plugin.player.close();
+                    placeholder.style.display = 'block';
+                } else {
+                    window.plugin.player.open();
+                    placeholder.style.display = 'none';
+                }
+            } else {
+                const nativeBtn = document.querySelector('[vw-access-button]');
+                if (nativeBtn) {
+                    nativeBtn.click();
+                    placeholder.style.display = 'none';
+                }
+            }
+        }
 
         // =========================================
         // CONFIG
         // =========================================
 
         const API_URL = 'http://localhost:5000';
-
         let glossas = [];
-
         let recorder;
-
         let chunks = [];
-
         let timeouts = [];
 
-        // =========================================
-        // STATUS
-        // =========================================
-
         function setStatus(texto) {
-
-            document.getElementById(
-                'status'
-            ).innerText = texto;
+            document.getElementById('status').innerText = texto;
         }
 
-        // =========================================
-        // TIMESTAMP
-        // =========================================
-
         function srtToMs(time) {
-
             const [main, ms] = time.split(',');
-
             const [h, m, s] = main.split(':');
-
             return (
                 parseInt(h) * 3600000 +
                 parseInt(m) * 60000 +
@@ -283,323 +398,185 @@
         // =========================================
 
         async function processarSRT() {
-
             try {
-
-                const file = document.getElementById(
-                    'fileInput'
-                ).files[0];
-
+                const file = document.getElementById('fileInput').files[0];
                 if (!file) {
-
                     alert('Selecione um SRT');
                     return;
                 }
 
-                setStatus(
-                    '🧠 IA otimizando legendas...'
-                );
+                setStatus('🧠 IA otimizando legendas...');
 
                 const formData = new FormData();
+                formData.append('file', file);
 
-                formData.append(
-                    'file',
-                    file
-                );
-
-                const response = await fetch(
-                    `${API_URL}/otimizar-srt`,
-                    {
-                        method: 'POST',
-                        body: formData
-                    }
-                );
+                const response = await fetch(`${API_URL}/otimizar-srt`, {
+                    method: 'POST',
+                    body: formData
+                });
 
                 const data = await response.json();
-
-                if (!data.success) {
-
-                    throw new Error(
-                        data.error
-                    );
-                }
+                if (!data.success) throw new Error(data.error);
 
                 glossas = data.entries;
-
                 renderPreview();
-
-                setStatus(
-                    `✅ ${glossas.length} frases otimizadas`
-                );
+                setStatus(`✅ ${glossas.length} frases otimizadas`);
 
             } catch (err) {
-
                 console.error(err);
-
-                setStatus(
-                    '❌ Erro ao processar SRT'
-                );
+                setStatus('❌ Erro ao processar SRT');
             }
         }
 
-        // =========================================
-        // PREVIEW
-        // =========================================
-
         function renderPreview() {
-
-            const container = document.getElementById(
-                'previewList'
-            );
-
+            const container = document.getElementById('previewList');
             container.innerHTML = '';
 
             glossas.forEach(item => {
-
                 const div = document.createElement('div');
-
                 div.className = 'preview-item';
-
                 div.innerHTML = `
-                    <div class="original">
-                        ${item.texto_original}
-                    </div>
-
-                    <div class="optimized">
-                        🤟 ${item.texto_otimizado}
-                    </div>
+                    <div class="original">${item.texto_original}</div>
+                    <div class="optimized">🤟 ${item.texto_otimizado}</div>
                 `;
-
                 container.appendChild(div);
             });
         }
 
-        // =========================================
-        // ESPERAR VLIBRAS
-        // =========================================
-
         function esperarVLibras() {
-
             return new Promise(resolve => {
-
                 const interval = setInterval(() => {
-
                     if (
                         window.plugin &&
                         window.plugin.player &&
                         typeof window.plugin.player.translate === 'function'
                     ) {
-
                         clearInterval(interval);
-
                         resolve();
                     }
-
                 }, 1000);
             });
         }
 
         // =========================================
-        // GERAR VIDEO
+        // GERAR VÍDEO COM TRADUÇÃO RETOMADA
         // =========================================
 
         async function gerarVideo() {
-
             if (glossas.length === 0) {
-
-                alert(
-                    'Processe o SRT primeiro.'
-                );
-
+                alert('Processe o SRT primeiro.');
                 return;
+            }
+
+            // Força a abertura do player caso esteja fechado
+            if (window.plugin && window.plugin.player && !window.plugin.player.isOpen) {
+                toggleAvatarLibras();
             }
 
             await esperarVLibras();
 
-            const canvas = document.querySelector(
-                'canvas'
-            );
+            // Mapeamento do canvas dentro da árvore oculta ou visível
+            let canvas = null;
+            const screenPlayer = document.querySelector('div[vw-plugin-wrapper] viewBox screen-player');
+            if (screenPlayer && screenPlayer.shadowRoot) {
+                canvas = screenPlayer.shadowRoot.querySelector('canvas');
+            }
+            
+            if (!canvas) {
+                canvas = document.querySelector('.vlibras-embed-container canvas') || document.querySelector('canvas');
+            }
 
             if (!canvas) {
-
-                alert(
-                    'Canvas do VLibras não encontrado.'
-                );
-
+                alert('Não foi possível encontrar a janela de renderização 3D do player.');
                 return;
             }
 
             chunks = [];
-
             timeouts.forEach(clearTimeout);
-
             timeouts = [];
 
+            // Inicia o fluxo de gravação do canvas (30 FPS)
             const stream = canvas.captureStream(30);
-
-            recorder = new MediaRecorder(
-                stream,
-                {
-                    mimeType: 'video/webm'
-                }
-            );
+            recorder = new MediaRecorder(stream, { mimeType: 'video/webm' });
 
             recorder.ondataavailable = e => {
-
-                if (e.data.size > 0) {
-
-                    chunks.push(e.data);
-                }
+                if (e.data.size > 0) chunks.push(e.data);
             };
 
             recorder.onstop = enviarVideo;
-
             recorder.start();
 
-            document.getElementById(
-                'btnGerar'
-            ).classList.add('recording');
+            // Ativa sinalizadores visuais na interface
+            document.getElementById('btnGerar').classList.add('recording');
+            document.getElementById('avatarContainer').classList.add('is-recording');
+            document.getElementById('recordBadge').style.display = 'block';
 
-            setStatus(
-                '🎥 Gravando avatar VLibras...'
-            );
+            setStatus('🎥 Gravando avatar VLibras...');
 
-            // =====================================
-            // PLAY SINCRONIZADO
-            // =====================================
-
+            // Lógica de sincronização cronometrada dos gestos
             glossas.forEach(item => {
-
-                const delay = srtToMs(
-                    item.start
-                );
-
+                const delay = srtToMs(item.start);
                 const timeout = setTimeout(() => {
-
-                    console.log(
-                        item.texto_otimizado
-                    );
-
-                    window.plugin.player.translate(
-                        item.texto_otimizado
-                    );
-
+                    if (window.plugin && window.plugin.player && typeof window.plugin.player.translate === 'function') {
+                        // Passa a glossa otimizada para o motor de animação do VLibras
+                        window.plugin.player.translate(item.texto_otimizado);
+                    }
                 }, delay);
-
                 timeouts.push(timeout);
-
             });
 
-            const ultimo = glossas[
-                glossas.length - 1
-            ];
-
-            const total = (
-                srtToMs(ultimo.end) + 3000
-            );
+            // Determina a finalização da gravação somando 3 segundos à última legenda
+            const ultimo = glossas[glossas.length - 1];
+            const total = srtToMs(ultimo.end) + 3000; 
 
             setTimeout(() => {
-
                 pararGravacao();
-
             }, total);
         }
 
-        // =========================================
-        // PARAR
-        // =========================================
-
         function pararGravacao() {
-
-            if (
-                recorder &&
-                recorder.state === 'recording'
-            ) {
-
+            if (recorder && recorder.state === 'recording') {
                 recorder.stop();
-
-                document.getElementById(
-                    'btnGerar'
-                ).classList.remove('recording');
+                
+                document.getElementById('btnGerar').classList.remove('recording');
+                document.getElementById('avatarContainer').classList.remove('is-recording');
+                document.getElementById('recordBadge').style.display = 'none';
             }
         }
 
         // =========================================
-        // ENVIAR VIDEO
+        // ENVIO DO BUFFER DE VÍDEO
         // =========================================
 
         async function enviarVideo() {
-
             try {
+                setStatus('⚡ Convertendo vídeo Full HD...');
 
-                setStatus(
-                    '⚡ Convertendo vídeo Full HD...'
-                );
-
-                const blob = new Blob(
-                    chunks,
-                    {
-                        type: 'video/webm'
-                    }
-                );
-
+                const blob = new Blob(chunks, { type: 'video/webm' });
                 const formData = new FormData();
+                formData.append('video', blob, 'libras.webm');
 
-                formData.append(
-                    'video',
-                    blob,
-                    'libras.webm'
-                );
-
-                const response = await fetch(
-                    `${API_URL}/salvar-video`,
-                    {
-                        method: 'POST',
-                        body: formData
-                    }
-                );
+                const response = await fetch(`${API_URL}/salvar-video`, {
+                    method: 'POST',
+                    body: formData
+                });
 
                 const data = await response.json();
+                if (!data.success) throw new Error(data.error);
 
-                if (!data.success) {
+                setStatus('✅ Vídeo salvo em /media');
 
-                    throw new Error(
-                        data.error
-                    );
-                }
-
-                setStatus(
-                    '✅ Vídeo salvo em /media'
-                );
-
-                // =================================
-                // DOWNLOAD
-                // =================================
-
-                const downloadBtn = document.getElementById(
-                    'downloadBtn'
-                );
-
-                const nomeArquivo = data.video_mp4
-                    .split('\\')
-                    .pop();
+                const downloadBtn = document.getElementById('downloadBtn');
+                const nomeArquivo = data.video_mp4.split('\\').pop();
 
                 downloadBtn.href = `${API_URL}/media/${nomeArquivo}`;
-
                 downloadBtn.style.display = 'inline-block';
 
             } catch (err) {
-
                 console.error(err);
-
-                setStatus(
-                    '❌ Erro ao salvar vídeo'
-                );
+                setStatus('❌ Erro ao salvar vídeo');
             }
         }
-
     </script>
-
 </body>
-
 </html>
